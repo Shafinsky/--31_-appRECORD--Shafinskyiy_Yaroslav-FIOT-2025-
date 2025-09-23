@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <h2>HTML-код Форми</h2>
+        <pre class="code_syntax" style="color:#d1d1d1;background:#000000;"><span class="line_wrapper">           <span style="color:#ff8906; ">&lt;</span><span style="color:#e66170; font-weight:bold; ">div</span> class<span style="color:#d2cd86; ">=</span><span style="color:#00c4c4; ">"custom-block"</span><span style="color:#ff8906; ">&gt;</span></span>
+            <span style='color:#808030; '>&lt;</span>button class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>btn-action sign-in</span><span style='color:#800000; '>"</span> onclick<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>document.getElementById('form-modal').style.display='block'</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>SIGN IN<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>button<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> id<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>form-modal</span><span style='color:#800000; '>"</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>form-modal</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+  <span style='color:#808030; '>&lt;</span>form class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>signin-form</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>h2<span style='color:#808030; '>></span>Sign In <span style='color:#808030; '>/</span> Register<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>h2<span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>label<span style='color:#808030; '>></span>Email<span style='color:#800080; '>:</span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>label<span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>input type<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>email</span><span style='color:#800000; '>"</span> required<span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>label<span style='color:#808030; '>></span>Password<span style='color:#800080; '>:</span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>label<span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>input type<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>password</span><span style='color:#800000; '>"</span> required<span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>button type<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>submit</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>Login<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>button<span style='color:#808030; '>></span>
+    <span style='color:#808030; '>&lt;</span>button type<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>button</span><span style='color:#800000; '>"</span> onclick<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>document.getElementById('form-modal').style.display='none'</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>Close<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>button<span style='color:#808030; '>></span>
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>form<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+<span class="line_wrapper">                <span style="color:#ff8906; ">&lt;/</span><span style="color:#e66170; font-weight:bold; ">div</span><span style="color:#ff8906; ">&gt;</span></span></pre>
+<h2>Зображення форми</h2>
+        <img src="images_lab1/Form.png" alt="form">
+
+        <h2>Теорія про теги та атрибути для створення форм</h2>
+        <p>HTML елемент &lt;form&gt; визначає форму, яка використовується для збору користувацького вводу.
+            Елемент &lt;input&gt; є найбільш важливим елементом форми.
+            Елемент &lt;input&gt; може відображатися кількома способами, в залежності від атрибута type.
+            &lt;input type='text'&gt; визначає однорядкове поле вводу для введення тексту - text input
+        </p>
+        <p>&lt;input type='radio'&gt; визначає радіокнопку. Перемикачі (радіокнопки) дозволяють користувачу обрати ОДИН
+            з обмеженної кількості варіантів</p>
+        <p>Атрибут action визначає дію, яку буде виконано при надсиланні форми.
+            Зазвичай дані форми відправляються на вебсторінку на сервері, коли користувач натискає кнопку надсилання
+            (submit).
+            Якщо атрибут action пропущений, дію встановлено на поточну сторінку.
+            Атрибут target вказує, чи буде надісланий результат відкриватися в новій вкладці браузера, у фреймі або в
+            поточному вікні.
+            За замовчуванням значення '_self' означає, що форма буде відправлена в поточному вікні.
+            Щоб зробити результат форми відкритим в новій вкладці браузера, використовуйте значення '_blank'.
+            Атрибут method вказує метод HTTP (GET або POST), який буде використовуватись при надсиланні даних Форми.
+            Кожне поле вводу повинно мати атрибут name для надсилання. Якщо атрибут name опущений, дані його поля вводу
+            не будуть відправлені взагалі.
+            Елемент &ltfieldset&gt; використовується для групування пов’язаних даних у формі.
+            Елемент &ltlegend&gt; визначає заголовок для елемента &ltfieldset&gt;.      </p>
+
+            <h3>Список всіх атрибутів &lt;form&gt;</h3>
+
+      <table>
+        <tr>
+          <th>Атрибут</th>
+          <th>Опис</th>
+        </tr>
+        <tr>
+          <td>accept-charset</td>
+          <td>Визначає кодування символів, що використовуються для надсилання форми</td>
+        </tr>
+        <tr>
+          <td>action</td>
+          <td>Визначає, куди надсилати дані форми при надсиланні форми</td>
+        </tr>
+        <tr>
+          <td>autocomplete</td>
+          <td>Визначає, чи повинно автозаповнення форми включатися або виключатися</td>
+        </tr>
+        <tr>
+          <td>enctype</td>
+          <td>Визначає, як мають бути закодовані дані форми при їх надсиланні на сервер (тільки для method=&quot;post&quot;)</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td>Визначає метод HTTP для використання при надсиланні даних форми</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>Задає ім&rsquo;я форми</td>
+        </tr>
+        <tr>
+          <td>novalidate</td>
+          <td>Вказує, що форма не повинна перевірятися при надсиланні</td>
+        </tr>
+        <tr>
+          <td>rel</td>
+          <td>Визначає зв&rsquo;язок між пов&rsquo;язаним ресурсом і поточним документом</td>
+        </tr>
+        <tr>
+          <td>target</td>
+          <td>Вказує, де відображати відповідь, отриману після надсилання форми</td>
+        </tr>
+      </table>
+      <h3>HTML Елементи форми</h3>
+      <table>
+        <tr>
+          <th>Тег</th>
+          <th>Опис</th>
+        </tr>
+        <tr>
+          <td>&lt;form&gt;</td>
+          <td>Визначає HTML форму для користувальницького вводу</td>
+        </tr>
+        <tr>
+          <td>&lt;input&gt;</td>
+          <td>Визначає елемент управління вводом</td>
+        </tr>
+        <tr>
+          <td>&lt;textarea&gt;</td>
+          <td>Визначає багаторядковий елемент управління введенням (текстова область)</td>
+        </tr>
+        <tr>
+          <td>&lt;label&gt;</td>
+          <td>Визначає мітку для елемента &lt;input&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;fieldset&gt;</td>
+          <td>Групує пов’язані елементи в формі</td>
+        </tr>
+        <tr>
+          <td>&lt;legend&gt;</td>
+          <td>Визначає заголовок для елемента &lt;fieldset&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;select&gt;</td>
+          <td>Визначає випадаючий (розкриваючий) список</td>
+        </tr>
+        <tr>
+          <td>&lt;optgroup&gt;</td>
+          <td>Визначає групу пов’язаних параметрів в випадаючому списку</td>
+        </tr>
+        <tr>
+          <td>&lt;option&gt;</td>
+          <td>Визначає параметр в випадаючому списку</td>
+        </tr>
+        <tr>
+          <td>&lt;button&gt;</td>
+          <td>Визначає клікабельну кнопку</td>
+        </tr>
+        <tr>
+          <td>&lt;datalist&gt;</td>
+          <td>Визначає список попередньо визначених параметрів для елементів управління вводом</td>
+        </tr>
+        <tr>
+          <td>&lt;output&gt;</td>
+          <td>Визначає результат розрахунку</td>
+        </tr>
+      </table>
+
+      <h2>HTML-код Списків</h2>
+      <pre class="code_syntax" style="color:#d1d1d1;background:#000000;"><span class="line_wrapper"> <span style="color:#ff8906; ">&lt;</span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"top-searches"</span><span style='color:#a65700; '>></span>
+        Top Searches:
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+          <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Outlast<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+          <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Hell is Us<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+          <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Sniper Elite<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+          <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Destiny<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+          <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Spider-Man<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#a65700; '>></span>
+
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>nav</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"nav"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ol</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>All Games<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Hot Deals<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Sales<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Soon<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Novelty<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>XP Offers<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Wishlist<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+      <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#"</span><span style='color:#a65700; '>></span>Bundles<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ol</span><span style='color:#a65700; '>></span>
+  <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>nav</span><span style='color:#a65700; '>></span>
+<span class="line_wrapper"> <span style="color:#ff8906; ">&lt;/</span><span style="color:#e66170; font-weight:bold; ">div</span><span style="color:#ff8906; ">&gt;</span></span></pre>        <h2>Зображення списків</h2>
+        <img src="images_lab1/Lists.png" alt="lists" width="100%">
+        <h2>Теорія про теги та атрибути для створення cписків</h2>
+<p>
+    Використовуйте HTML елемент &lt;ul&gt; для визначення невпорядкованого списку<br>
+    Використовуйте CSS властивість list-style-type для визначення маркера елемента списку<br>
+    Використовуйте HTML елемент &lt;ol&gt; для визначення впорядкованого списку<br>
+    Використовуйте HTML атрибут type для визначення типу нумерації<br>
+    Використовуйте HTML елемент &lt;li&gt; для визначення елемента списку<br>
+    Використовуйте HTML елемент &lt;dl&gt; для визначення списку опису<br>
+    Використовуйте HTML елемент &lt;dt&gt; для визначення терміна опису<br>
+    Використовуйте HTML елемент &lt;dd&gt; для опису терміна в списку опису<br>
+    Списки можуть бути вкладені в списки<br>
+    Елементи списка можуть містити інші елементи HTML<br>
+    Використовуйте CSS властивість float:left або display:inline для горизонтального відображення списку<br>
+</p>
+
+
+
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
