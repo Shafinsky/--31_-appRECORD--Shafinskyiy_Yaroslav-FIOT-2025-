@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cелектори CSS</h1>
+    </header>
+    <main>
+        <p>У даному розділі викладено теорія про види селекторів та загальні приклади їх застосування. Приклади, що стосуються індвидуального сайту розміщені у наступних розділах. </p>
+        <h3>1. Селектор за тегом</h3>
+        <p>Вибирає всі елементи певного типу (тегу).</p>
+        <pre><code>p { color: blue; }</code></pre>
+
+        <h3>2. Селектор за класом</h3>
+        <p>Вибирає всі елементи з певним класом.</p>
+        <pre><code>.highlight { background-color: yellow; }</code></pre>
+
+        <h3>3. Селектор за ідентифікатором</h3>
+        <p>Вибирає елемент з певним ідентифікатором.</p>
+        <pre><code>#header { font-size: 24px; }</code></pre>
+
+        <h3>4. Груповий селектор</h3>
+        <p>Вибирає кілька елементів одночасно.</p>
+        <pre><code>h1, h2, h3 { font-family: Arial; }</code></pre>
+
+        <h3>5. Спадкові селектори</h3>
+        <p>Вибирає елементи, які є нащадками певного елемента.</p>
+        <pre><code>div p { color: green; }</code></pre>
+
+        <h3>6. Сусідні селектори</h3>
+        <p>Вибирає елемент, який безпосередньо слідує за іншим елементом.</p>
+        <pre><code>h1 + p { margin-top: 0; }</code></pre>
+
+        <h3>7. Селектори атрибутів</h3>
+        <p>Вибирають елементи на основі значення їх атрибутів.</p>
+        <pre><code>input[type="text"] { border: 1px solid black; }</code></pre>
+
+        <h3>8. Псевдокласи</h3>
+        <p>Вибирають елементи на основі їх стану.</p>
+        <pre><code>a:hover { color: red; }</code></pre>
+
+        <h3>9. Псевдоелементи</h3>
+        <p>Вибирають частини елемента.</p>
+        <pre><code>p::first-line { font-weight: bold; }</code></pre>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

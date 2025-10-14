@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cелектор класу</h1>
+    </header>
+    <main>
+        <h2></h2>Використано для стилізації блоків інтерфейсу (хедер, меню, кнопки тощо):</h2>
+        <h2>HTML-код та CSS-код</h2>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+        <span style='color:#808030; '>.</span>header <span style='color:#800080; '>{</span>
+<span style='color:#e34adc; '>  display:</span> flex<span style='color:#800080; '>;</span>
+  align<span style='color:#808030; '>-</span>items<span style='color:#800080; '>:</span> center<span style='color:#800080; '>;</span>
+  justify<span style='color:#808030; '>-</span>content<span style='color:#800080; '>:</span> space<span style='color:#808030; '>-</span>between<span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  background:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#111</span><span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  padding:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>10px</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>40px</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#808030; '>.</span>logo<span style='color:#808030; '>-</span>area <span style='color:#800080; '>{</span>
+<span style='color:#e34adc; '>  display:</span> flex<span style='color:#800080; '>;</span>
+  align<span style='color:#808030; '>-</span>items<span style='color:#800080; '>:</span> center<span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  gap:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>10px</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#808030; '>.</span>sign<span style='color:#808030; '>-</span>in <span style='color:#800080; '>{</span>
+<span style='color:#e34adc; '>  background:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#00ff66</span><span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  color:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#000</span><span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  padding:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>5px</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>12px</span><span style='color:#800080; '>;</span>
+  border<span style='color:#808030; '>-</span>radius<span style='color:#800080; '>:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>4px</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span></pre>
+        <h2>Зображення</h2>
+        <img src="images_lab2/type_selector.png" alt="сlass_selector" style="width:100%;">
+    </main>
+    <h2>Теорія</h2>
+    <p>Селектор класу — це тип CSS-селектора, який вибирає елементи HTML, які мають певний клас. Клас визначається в
+        атрибуті class у HTML-елементі. Селектори класів починаються з крапки (.) перед ім'ям класу.</p>
+    <p>Наприклад, якщо ви хочете стилізувати всі елементи з класом highlight, ви можете використовувати селектор класу
+        так:</p>
+    <pre><code>
+        .highlight {
+            background-color: yellow; /* Змінює фон елементів з класом highlight на жовтий */
+            font-weight: bold; /* Робить текст жирним */
+        }        
+    </code></pre>
+    <p>У HTML це виглядатиме так:</p>
+    <pre><code>
+        &lt;p class="highlight">Цей текст виділений жовтим фоном.&lt;/p>
+        &lt;p>Цей текст не має спеціального стилю.&lt;/p>
+    </code></pre>
+    <p>В цьому прикладі перший абзац отримає жовтий фон і жирний текст, тоді як другий залишиться без змін.</p>
+    <footer></footer>
+</body>
+
+</html>

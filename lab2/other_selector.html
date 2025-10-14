@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Інші селектори</h1>
+    </header>
+    <main>
+        <h2> Сусідній селектор</h2>
+        <h3>Приклад (з коду сайту):</h3>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+<span style='color:#696969; '>/* сусідній */</span>
+h2 <span style='color:#808030; '>+</span> <span style='color:#808030; '>.</span>data<span style='color:#808030; '>-</span>table <span style='color:#800080; '>{</span>
+  margin<span style='color:#808030; '>-</span>top<span style='color:#800080; '>:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>10px</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span></pre>
+        <h3>Теорія:</h3>
+        <p>Сусідні селектори в CSS — це інструменти, які дозволяють стилізувати елементи на основі їхнього сусідства в
+            документі. Вони застосовуються для вибору елемента, який йде безпосередньо після іншого елемента, тобто є
+            його сусідом. Цей тип селектора особливо корисний, коли потрібно змінити стиль елемента в залежності від
+            того, що передує йому у структурі HTML.</p>
+        <p>Сусідні селектори дозволяють уникнути використання додаткових класів для стилізації, зменшуючи обсяг коду та
+            покращуючи його читабельність. Важливо, що селектор працює лише з тим елементом, який безпосередньо йде
+            після цільового, тому, якщо між ними є інші елементи, сусідній селектор не спрацює.</p>
+        <p>Cинтаксис:</p>
+        <pre><code>
+            selector1 + selector2 {
+            /* стилі для selector2 */
+            }
+        </code></pre>
+        <h2> Cелектор атрибута</h2>
+        <h3>Приклад (з коду сайту):</h3>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+<span style='color:#696969; '>/* селектор атрибута */</span>
+input<span style='color:#808030; '>[</span>type<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>email</span><span style='color:#800000; '>"</span><span style='color:#808030; '>]</span><span style='color:#808030; '>,</span>
+input<span style='color:#808030; '>[</span>type<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>password</span><span style='color:#800000; '>"</span><span style='color:#808030; '>]</span> <span style='color:#800080; '>{</span>
+<span style='color:#e34adc; '>  background:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#111</span><span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  border:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>1px</span> solid <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#333</span><span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  color:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#fff</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span></pre>
+        <h3>Теорія:</h3>
+        <p>Селектори атрибутів у CSS дозволяють вибирати елементи HTML на основі значень їх атрибутів. Основний
+            синтаксис селектора атрибута виглядає як [атрибут], що означає, що він вибирає всі елементи, які мають
+            зазначений атрибут, незалежно від його значення. Наприклад, селектор [disabled] вибирає всі елементи з
+            атрибутом disabled.</p>
+        <p>Якщо ви хочете вибрати елементи з певним значенням атрибута, ви можете використати синтаксис
+            [атрибут="значення"]. Це дозволяє вибрати тільки ті елементи, у яких атрибут має вказане значення.
+            Наприклад, [type="text"] вибирає всі текстові поля вводу.</p>
+        <p>Існують також селектори, які дозволяють здійснювати часткові збіги. Селектор [атрибут^="значення"] вибирає
+            елементи, атрибут яких починається з вказаного значення. Наприклад, [href^="http"] вибирає всі посилання,
+            які починаються з http. Селектор [атрибут$="значення"] вибирає елементи, атрибут яких закінчується на
+            вказане значення, наприклад, [src$=".jpg"] вибирає всі зображення з розширенням .jpg. А селектор
+            [атрибут*="значення"] вибирає елементи, атрибут яких містить вказане значення де-небудь у середині, як у
+            випадку [class*="button"], що вибирає всі елементи, у класі яких є слово button.</p>
+        <p>Селектори атрибутів також можуть комбінуватися з іншими селекторами для більш точного вибору елементів.
+            Наприклад, div[data-role="main"] вибирає всі
+        <p>, у яких атрибут data-role має значення main. Завдяки цим селекторам ви можете стилізувати HTML, не додаючи
+            додаткових класів або ідентифікаторів, що робить ваш код чистішим і легшим для підтримки.</p>
+
+        <h2> Дочірній селектор</h2>
+        <h3>Приклад (з коду сайту):</h3>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+<span style='color:#696969; '>/* дочірній */</span>
+<span style='color:#808030; '>.</span>nav ul li a <span style='color:#800080; '>{</span>
+<span style='color:#e34adc; '>  color:</span> <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>#fff</span><span style='color:#800080; '>;</span>
+  text<span style='color:#808030; '>-</span>decoration<span style='color:#800080; '>:</span> none<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span></pre>
+        <p>Це означає, що стиль був застосований до всіх зображень (img), які є безпосередніми дітьми елемента з класом
+            .item, який, в свою чергу, є безпосереднім нащадком .carousel-inner.</p>
+
+        <h3>Теорія:</h3>
+        <p>Дочірні селектори в CSS використовуються для вибору елементів, які є безпосередніми нащадками (дочірніми)
+            певного батьківського елемента. Це дозволяє стилізувати конкретні елементи в структурі HTML, зберігаючи при
+            цьому контроль над тим, які саме елементи отримують ці стилі.</p>
+        <p>Синтаксис дочірніх селекторів виглядає наступним чином:</p>
+        <pre><code>
+                parent > child {
+                /* стилі для child */
+                }
+            </code></pre>
+
+        <h2> Універсальний селектор</h2>
+        <h3>Приклад (з коду сайту):</h3>
+        <pre class="code_syntax"
+            style="color:#000020;background:#f6f8ff;"><span style='color:#696969; '>/* універсальний */</span>
+<span style='color:#808030; '>*</span> <span style='color:#800080; '>{</span>
+<span style='color:#e34adc; '>  margin:</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#e34adc; '>  padding:</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+  box<span style='color:#808030; '>-</span>sizing<span style='color:#800080; '>:</span> border<span style='color:#808030; '>-</span>box<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span></pre>
+        <h3>Зображення:</h3>
+        <img src="images_lab2/other_selector.png" alt="un_selector" style="width:100%;">
+        <h3>Теорія:</h3>
+        <p>Універсальний селектор у CSS використовується для вибору всіх елементів на сторінці без винятку. Він
+            представлений символом зірочки (*). Основний синтаксис виглядає так: * { властивість: значення; }.
+            Використання універсального селектора дозволяє застосовувати певні стилі до всіх елементів, що може бути
+            корисно для глобального форматування, наприклад, для задання шрифтів, кольорів чи відступів.</p>
+        <p>Однак варто пам’ятати, що зловживання універсальним селектором може призвести до зниження продуктивності,
+            оскільки браузеру доводиться перевіряти всі елементи на сторінці. Це особливо важливо на великих
+            веб-сторінках або в додатках з великою кількістю елементів. Універсальний селектор може також
+            використовуватися в комбінації з іншими селекторами, щоб звузити область застосування стилів, наприклад, div
+            * { властивість: значення; }, що вибирає всі елементи всередині &lt;div>.</p>
+        <p>Цей селектор часто використовують для скидання стилів за замовчуванням у браузері, забезпечуючи єдність
+            вигляду елементів на всіх платформах. Проте, рекомендується використовувати універсальний селектор з
+            обережністю, щоб уникнути непередбачених наслідків у стилізації вашого веб-дизайну.</p>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
