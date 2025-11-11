@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Завдання №3</h1>
+        <p>Для виконання завдання №3 необхідно було створити головну сторінку сайту відповідно до зображення:</p>
+        <img src="images_lab3/Maket(3).png" alt="task3_5">
+        <h2>Теорія</h2>
+        <p>Flexbox (Flexible Box Layout Model) — це сучасна технологія для створення гнучких і адаптивних макетів у CSS.
+            Вона дозволяє легко вирівнювати елементи, як у рядках, так і у стовпцях, контролювати їх порядок, розміри та
+            поведінку під час зміни розмірів екрану.</p>
+        <p>Зазвичай виділяють дві основних концепцій Flexbox:</p>
+        <ul>
+            <li>Контейнер (Flex Container) — це елемент, до якого застосовується властивість display: flex;. Усі
+                безпосередні дочірні елементи такого контейнера стають flex-елементами і автоматично підлаштовуються під
+                поведінку контейнера.</li>
+            <li>Flex-елементи (Flex Items) — це дочірні елементи контейнера. Вони можуть бути вирівняні і впорядковані у
+                відповідності до властивостей контейнера та власних flex-властивостей.</li>
+        </ul>
+        <p>Flex Container Властивості:</p>
+        <ul>
+            <li><code>display</code>: flex | inline-flex - визначає контейнер як flex або inline-flex.</li>
+            <li><code>flex-direction</code>: row | row-reverse | column | column-reverse - задає напрямок розташування елементів.</li>
+            <li><code>justify-content</code>: flex-start | flex-end | center | space-between | space-around - вирівнює елементи по головній осі (горизонтальній).</li>
+            <li><code>align-items</code>: stretch | flex-start | center | flex-end | baseline - вирівнює елементи по поперечній осі (вертикальній).</li>
+            <li><code>flex-wrap</code>: nowrap | wrap | wrap-reverse - дозволяє елементам переноситися на новий рядок, якщо не вистачає місця.</li>
+        </ul>
+        <p>Flex Items Властивості:</p>
+        <ul>
+            <li><code>order</code>: числове значення (за замовчуванням 0) - змінює візуальний порядок елементів.</li>
+            <li><code>flex-grow</code>: числове значення (за замовчуванням 0) -  визначає, скільки простору елемент займатиме при розширенні.</li>
+            <li><code>flex-shrink</code>: числове значення (за замовчуванням 1) - визначає, скільки простору елемент скорочуватиме при обмеженому місці.</li>
+            <li><code>flex-basis</code>: значення розміру (наприклад, px, %, auto) - задає початковий розмір елемента до розподілу простору.</li>
+            <li><code>align-self</code>: auto | flex-start | center | flex-end | baseline | stretch - вирівнює окремий елемент уздовж поперечної осі, перевизначаючи <code>align-items</code> контейнера.</li>
+        </ul>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

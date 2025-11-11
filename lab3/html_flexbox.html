@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>HTML - код (Flexbox)</h1>
+        <h2>task3.html</h2>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+            &lt;!DOCTYPE html>
+            &lt;html lang=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>uk</span><span style='color:#2a00ff; '>"</span>>
+            &lt;head>
+            &lt;meta charset=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>UTF-8</span><span style='color:#2a00ff; '>"</span>>
+            &lt;meta name=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>viewport</span><span style='color:#2a00ff; '>"</span> content=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>width=device-width, initial-scale=1.0</span><span style='color:#2a00ff; '>"</span>>
+            &lt;title>Java з працевлаштуванням&lt;/title>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>link</span> rel=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>stylesheet</span><span style='color:#2a00ff; '>"</span> href=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>style_task3.css</span><span style='color:#2a00ff; '>"</span>>
+            &lt;/head>
+            &lt;body>
+            &lt;header>
+            &lt;h2>ЩО ВИ ОПАНУЄТЕ?&lt;/h2>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skills</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/html_css.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>HTML / CSS</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>HTML / CSS&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/js.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>JavaScript</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>JavaScript&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/react1.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>React</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>React&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/react2.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>React</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>React&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/ts.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>TypeScript</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>TypeScript&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/angular.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Angular</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>Angular&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/github1.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>GitHub</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>GitHub&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>skill-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/github2.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>GitHub</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span>GitHub&lt;/span>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/header>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>main</span>>
+            &lt;section class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee</span><span style='color:#2a00ff; '>"</span>>
+            &lt;h3>МИ ГАРАНТУЄМО НАШИМ ВИПУСКНИКАМ ПРАЦЕВЛАШТУВАННЯ&lt;/h3>
+            &lt;h3>&lt;span class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>highlight</span><span style='color:#2a00ff; '>"</span>>В НЕ ЗАЛЕЖНОСТІ ВІД ВІКУ&lt;/span>&lt;/h3>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-content</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-image</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>images/student.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Student Image</span><span style='color:#2a00ff; '>"</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-info</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-column</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>checkmark</span><span style='color:#2a00ff; '>"</span>>✔&lt;/span>
+            &lt;p>&lt;strong>НАВІТЬ У ЗРІЛОМУ ВІЦІ:&lt;/strong>&lt;br> В Україні поширений міф про те, що тільки молоді люди можуть освоїти IT-напрямок. Але максимальний вік нашого студента доходить до 63 років.&lt;/p>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>checkmark</span><span style='color:#2a00ff; '>"</span>>✔&lt;/span>
+            &lt;p>&lt;strong>НАВІТЬ БЕЗ ЗНАННЯ АНГЛІЙСЬКОЇ:&lt;/strong>&lt;br> Адже в нашому курсі вже включене вивчення англійської мови.&lt;/p>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-column</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>checkmark</span><span style='color:#2a00ff; '>"</span>>✔&lt;/span>
+            &lt;p>&lt;strong>НАВІТЬ БЕЗ ПРОФІЛЬНОЇ ОСВІТИ ТА НАВИЧОК:&lt;/strong>&lt;br> 70% наших випускників вже мають освіту, не пов’язану з програмуванням.&lt;/p>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>guarantee-item</span><span style='color:#2a00ff; '>"</span>>
+            &lt;span class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>checkmark</span><span style='color:#2a00ff; '>"</span>>✔&lt;/span>
+            &lt;p>&lt;strong>НАВІТЬ БЕЗ ЗНАНЬ ПРОГРАМУВАННЯ:&lt;/strong>&lt;br> Більшість наших студентів не знали з програмування нічого, починаючи свій шлях з нуля.&lt;/p>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/section>
+            &lt;section class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>course-info</span><span style='color:#2a00ff; '>"</span>>
+            &lt;h2>курс програмування&lt;/h2>
+            &lt;h1>JAVA З ПРАЦЕВЛАШТУВАННЯ:&lt;/h1>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>course-content</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>course-image</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Images/student_pointer.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Student pointing</span><span style='color:#2a00ff; '>"</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>course-details</span><span style='color:#2a00ff; '>"</span>>
+            &lt;ul>
+            &lt;li>&lt;strong>СТАЖУВАННЯ В IT-КОМПАНІЇ&lt;/strong> &lt;br> Покажи себе на курсі і ще до закінчення навчання ми відправимо тебе на стажування в IT-компанію.&lt;/li>
+            &lt;li>&lt;strong>ТРИ ВИПУСКНИХ ПРОЕКТИ&lt;/strong> &lt;br> Наприкінці курсу ти будеш мати три проекти, з якими легко працевлаштуєшся.&lt;/li>
+            &lt;li>&lt;strong>ІНТЕНСИВНІСТЬ&lt;/strong> &lt;br> На відміну від інших, наші студенти вчаться 6 разів на тиждень в інтенсивному режимі, щоб за 6 місяців завершити курс.&lt;/li>
+            &lt;/ul>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/section>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>main</span>>
+            &lt;footer class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>footer</span><span style='color:#2a00ff; '>"</span>>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>footer-content</span><span style='color:#2a00ff; '>"</span>>
+            &lt;p>&amp;copy; 2024&lt;/p>
+            &lt;<span style='color:#7f0055; font-weight:bold; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>social-logos</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Images/facebook.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Facebook</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>social-logo</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Images/youtube.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Youtube</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>social-logo</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Images/telegram.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Telegram</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>social-logo</span><span style='color:#2a00ff; '>"</span>>
+            &lt;img src=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Images/instagram.png</span><span style='color:#2a00ff; '>"</span> alt=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Instagram</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>social-logo</span><span style='color:#2a00ff; '>"</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/<span style='color:#7f0055; font-weight:bold; '>div</span>>
+            &lt;/footer>
+            &lt;/body>
+            &lt;/html></pre>
+    </main>
+    <footer></footer>
+</body>
+</html>
