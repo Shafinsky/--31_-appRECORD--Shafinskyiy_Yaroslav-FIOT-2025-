@@ -1,0 +1,20 @@
+body {
+    background: #9ed19e;
+    font-family: Arial;
+}
+
+.task {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+#place {
+    width: 150px;
+    height: 250px;
+    background: green;
+}
+#boxes div {
+    margin: 5px;
+    display: inline-block;
+}
