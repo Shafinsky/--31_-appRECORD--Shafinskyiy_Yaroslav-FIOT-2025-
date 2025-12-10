@@ -1,0 +1,203 @@
+<img src="images_lab7/task5.1.png" alt="task2.3_1" style="width:50%">
+<h2>index.html</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">!</span>DOCTYPE html<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>html lang<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">uk</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>meta charset<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">UTF-8</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#800000; font-weight:bold; ">link</span> rel<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">stylesheet</span><span style="color:#800000; ">"</span> href<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">/src/styles.css</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>title<span style="color:#808030; ">&gt;</span><span style="color:#797997; ">Image</span> Search<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>title<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>form <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">search-form</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#797997; ">input</span> type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">text</span><span style="color:#800000; ">"</span> name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">query</span><span style="color:#800000; ">"</span> placeholder<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">Search images...</span><span style="color:#800000; ">"</span> autocomplete<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">off</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>button type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">submit</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Search<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>form<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">loader is-hidden</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>ul <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">gallery</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>ul<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    window<span style="color:#808030; ">.</span><span style="color:#797997; ">global</span> <span style="color:#808030; ">=</span> window<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>script type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">module</span><span style="color:#800000; ">"</span> src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">/src/main.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>html<span style="color:#808030; ">&gt;</span></span></pre>
+<h2>api.js</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">export</span> async <span style="color:#800000; font-weight:bold; ">function</span> fetchImages<span style="color:#808030; ">(</span>query<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> API_KEY <span style="color:#808030; ">=</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">53619771-a40652e28b2874fad9456ac4c</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> BASE_URL <span style="color:#808030; ">=</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">https://pixabay.com/api/</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> url <span style="color:#808030; ">=</span> <span style="color:#800000; ">`</span><span style="color:#800000; ">${</span><span style="color:#797997; ">BASE_URL</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">?key=</span><span style="color:#800000; ">${</span><span style="color:#797997; ">API_KEY</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&amp;q=</span><span style="color:#800000; ">${</span><span style="color:#800000; font-weight:bold; ">encodeURIComponent</span><span style="color:#808030; ">(</span><span style="color:#797997; "></span></span>
+<span class="line_wrapper"><span style="color:#797997; ">    query</span></span>
+<span class="line_wrapper"><span style="color:#797997; ">  </span><span style="color:#808030; ">)</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&amp;image_type=photo&amp;orientation=horizontal&amp;safesearch=true</span><span style="color:#800000; ">`</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> response <span style="color:#808030; ">=</span> await fetch<span style="color:#808030; ">(</span>url<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">!</span>response<span style="color:#808030; ">.</span>ok<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">throw</span> <span style="color:#800000; font-weight:bold; ">new</span> Error<span style="color:#808030; ">(</span>response<span style="color:#808030; ">.</span>status<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">return</span> await response<span style="color:#808030; ">.</span>json<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span></pre>
+<h2>loader.css</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#808030; ">.</span>loader <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  width<span style="color:#800080; ">:</span> 65px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  height<span style="color:#800080; ">:</span> 65px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#800080; ">:</span> 6px solid #e1e1e1<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>top<span style="color:#808030; ">-</span>color<span style="color:#800080; ">:</span> #4972ff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> <span style="color:#008c00; ">50</span><span style="color:#808030; ">%</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  animation<span style="color:#800080; ">:</span> spin <span style="color:#008000; ">0.</span>8s linear infinite<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  margin<span style="color:#800080; ">:</span> 20px auto<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">@keyframes spin <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  to <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    transform<span style="color:#800080; ">:</span> rotate<span style="color:#808030; ">(</span>360deg<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>is<span style="color:#808030; ">-</span>hidden <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  display<span style="color:#800080; ">:</span> none<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span></pre>
+<h2>main.js</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">./styles.css</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">./loader.css</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> iziToast from <span style="color:#800000; ">'</span><span style="color:#0000e6; ">izitoast</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">izitoast/dist/css/iziToast.min.css</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> SimpleLightbox from <span style="color:#800000; ">'</span><span style="color:#0000e6; ">simplelightbox/dist/simple-lightbox.esm</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">simplelightbox/dist/simple-lightbox.min.css</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> <span style="color:#800080; ">{</span> fetchImages <span style="color:#800080; ">}</span> from <span style="color:#800000; ">'</span><span style="color:#0000e6; ">./api</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">import</span> <span style="color:#800080; ">{</span> renderGallery <span style="color:#800080; ">}</span> from <span style="color:#800000; ">'</span><span style="color:#0000e6; ">./render</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> form <span style="color:#808030; ">=</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.search-form</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> gallery <span style="color:#808030; ">=</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.gallery</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> loader <span style="color:#808030; ">=</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.loader</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> lightbox <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">new</span> SimpleLightbox<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.gallery a</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  captions<span style="color:#800080; ">:</span> <span style="color:#0f4d75; ">true</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  captionsData<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">alt</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  captionDelay<span style="color:#800080; ">:</span> <span style="color:#008c00; ">250</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">form<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">submit</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> async e <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  e<span style="color:#808030; ">.</span>preventDefault<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> query <span style="color:#808030; ">=</span> e<span style="color:#808030; ">.</span>target<span style="color:#808030; ">.</span>query<span style="color:#808030; ">.</span>value<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">trim</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">!</span>query<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    iziToast<span style="color:#808030; ">.</span>warning<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      message<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Enter search query</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">      position<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">topRight</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  gallery<span style="color:#808030; ">.</span>innerHTML <span style="color:#808030; ">=</span> <span style="color:#800000; ">'</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  loader<span style="color:#808030; ">.</span>classList<span style="color:#808030; ">.</span>remove<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">is-hidden</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">try</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">const</span> data <span style="color:#808030; ">=</span> await fetchImages<span style="color:#808030; ">(</span>query<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    loader<span style="color:#808030; ">.</span>classList<span style="color:#808030; ">.</span>add<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">is-hidden</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">!</span>data<span style="color:#808030; ">.</span>hits<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">length</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      iziToast<span style="color:#808030; ">.</span>error<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">        message<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Sorry, no matches found. Try again!</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        position<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">topRight</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">const</span> markup <span style="color:#808030; ">=</span> renderGallery<span style="color:#808030; ">(</span>data<span style="color:#808030; ">.</span>hits<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    gallery<span style="color:#808030; ">.</span>insertAdjacentHTML<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">beforeend</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> markup<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    lightbox<span style="color:#808030; ">.</span>refresh<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">catch</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    loader<span style="color:#808030; ">.</span>classList<span style="color:#808030; ">.</span>add<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">is-hidden</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    iziToast<span style="color:#808030; ">.</span>error<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      message<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Error fetching images!</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">      position<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">topRight</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  form<span style="color:#808030; ">.</span>reset<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span></pre>
+<h2>render.js</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">export</span> <span style="color:#800000; font-weight:bold; ">function</span> renderGallery<span style="color:#808030; ">(</span>items<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">return</span> items</span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">map</span><span style="color:#808030; ">(</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">(</span><span style="color:#800080; ">{</span> webformatURL<span style="color:#808030; ">,</span> largeImageURL<span style="color:#808030; ">,</span> tags<span style="color:#808030; ">,</span> likes<span style="color:#808030; ">,</span> views<span style="color:#808030; ">,</span> comments<span style="color:#808030; ">,</span> downloads <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800000; ">`</span><span style="color:#0000e6; "></span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">      &lt;li class="card"&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">        &lt;a href="</span><span style="color:#800000; ">${</span><span style="color:#797997; ">largeImageURL</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">"&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">          &lt;img src="</span><span style="color:#800000; ">${</span><span style="color:#797997; ">webformatURL</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">" alt="</span><span style="color:#800000; ">${</span><span style="color:#797997; ">tags</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">" /&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">        &lt;/a&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">        &lt;div class="info"&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">          &lt;p&gt; </span><span style="color:#800000; ">${</span><span style="color:#797997; ">likes</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/p&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">          &lt;p&gt;️ </span><span style="color:#800000; ">${</span><span style="color:#797997; ">views</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/p&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">          &lt;p&gt; </span><span style="color:#800000; ">${</span><span style="color:#797997; ">comments</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/p&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">          &lt;p&gt;⬇️ </span><span style="color:#800000; ">${</span><span style="color:#797997; ">downloads</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/p&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">        &lt;/div&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">      &lt;/li&gt;</span></span>
+<span class="line_wrapper"><span style="color:#0000e6; ">    </span><span style="color:#800000; ">`</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">)</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">join</span><span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span></pre>
+<h2>style.css</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper">body <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  font<span style="color:#808030; ">-</span>family<span style="color:#800080; ">:</span> Arial<span style="color:#808030; ">,</span> sans<span style="color:#808030; ">-</span>serif<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  padding<span style="color:#800080; ">:</span> 40px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> #f4f4f4<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">search</span><span style="color:#808030; ">-</span>form <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  display<span style="color:#800080; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  gap<span style="color:#800080; ">:</span> 10px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  margin<span style="color:#808030; ">-</span>bottom<span style="color:#800080; ">:</span> 25px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">search</span><span style="color:#808030; ">-</span>form <span style="color:#797997; ">input</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  padding<span style="color:#800080; ">:</span> 8px 12px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  width<span style="color:#800080; ">:</span> 280px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#800080; ">:</span> 1px solid #bbb<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">search</span><span style="color:#808030; ">-</span>form button <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  padding<span style="color:#800080; ">:</span> 8px 16px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#800080; ">:</span> none<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> #446aff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  color<span style="color:#800080; ">:</span> #fff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  cursor<span style="color:#800080; ">:</span> pointer<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>gallery <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  display<span style="color:#800080; ">:</span> grid<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  grid<span style="color:#808030; ">-</span>template<span style="color:#808030; ">-</span>columns<span style="color:#800080; ">:</span> <span style="color:#800000; font-weight:bold; ">repeat</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">4</span><span style="color:#808030; ">,</span> 1fr<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  gap<span style="color:#800080; ">:</span> 18px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>card <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  overflow<span style="color:#800080; ">:</span> hidden<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> white<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#800080; ">:</span> 1px solid #ddd<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>card img <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  width<span style="color:#800080; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#808030; ">%</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  display<span style="color:#800080; ">:</span> block<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span></pre>
+
+<img src="images_lab7/task5.2.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task5.3.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task5.4.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task5.5.png" alt="task2.3_1" style="width:50%">

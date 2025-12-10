@@ -1,0 +1,231 @@
+<h2>1-timer.html</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">!</span>DOCTYPE html<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>html lang<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">uk</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>meta charset<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">UTF-8</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>meta name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">viewport</span><span style="color:#800000; ">"</span> content<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">width=device-width, initial-scale=1.0</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>title<span style="color:#808030; ">&gt;</span>Countdown Timer<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>title<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> flatpickr CSS <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#800000; font-weight:bold; ">link</span> rel<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">stylesheet</span><span style="color:#800000; ">"</span> href<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> iziToast CSS <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#800000; font-weight:bold; ">link</span> rel<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">stylesheet</span><span style="color:#800000; ">"</span> href<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>style<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    body <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      font<span style="color:#808030; ">-</span>family<span style="color:#800080; ">:</span> Arial<span style="color:#808030; ">,</span> sans<span style="color:#808030; ">-</span>serif<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      background<span style="color:#800080; ">:</span> #f4f4f4<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 40px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>container <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">max</span><span style="color:#808030; ">-</span>width<span style="color:#800080; ">:</span> 520px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      margin<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span> auto<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>controls <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      display<span style="color:#800080; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      gap<span style="color:#800080; ">:</span> 15px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      margin<span style="color:#808030; ">-</span>bottom<span style="color:#800080; ">:</span> 25px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#797997; ">input</span>#datetime<span style="color:#808030; ">-</span>picker <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      flex<span style="color:#808030; ">-</span>grow<span style="color:#800080; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 8px 10px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#800080; ">:</span> 1px solid #aaa<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      font<span style="color:#808030; ">-</span>size<span style="color:#800080; ">:</span> 15px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    button<span style="color:#808030; ">[</span>data<span style="color:#808030; ">-</span>start<span style="color:#808030; ">]</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 8px 20px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      background<span style="color:#800080; ">:</span> #446aff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#800080; ">:</span> none<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      color<span style="color:#800080; ">:</span> #fff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      cursor<span style="color:#800080; ">:</span> pointer<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      transition<span style="color:#800080; ">:</span> <span style="color:#808030; ">.</span>25s<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    button<span style="color:#808030; ">[</span>data<span style="color:#808030; ">-</span>start<span style="color:#808030; ">]</span><span style="color:#800080; ">:</span>disabled <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      opacity<span style="color:#800080; ">:</span> <span style="color:#008000; ">0.6</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      cursor<span style="color:#800080; ">:</span> not<span style="color:#808030; ">-</span>allowed<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>timer <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      display<span style="color:#800080; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      gap<span style="color:#800080; ">:</span> 25px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>field <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      text<span style="color:#808030; ">-</span>align<span style="color:#800080; ">:</span> center<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>value <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      display<span style="color:#800080; ">:</span> block<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      font<span style="color:#808030; ">-</span>size<span style="color:#800080; ">:</span> 42px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      font<span style="color:#808030; ">-</span>weight<span style="color:#800080; ">:</span> <span style="color:#800000; font-weight:bold; ">bold</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>label <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      display<span style="color:#800080; ">:</span> block<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      font<span style="color:#808030; ">-</span>size<span style="color:#800080; ">:</span> 14px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      color<span style="color:#800080; ">:</span> #<span style="color:#008c00; ">555</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>style<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">container</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">controls</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#797997; ">input</span> type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">text</span><span style="color:#800000; ">"</span> id<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">datetime-picker</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>button type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button</span><span style="color:#800000; ">"</span> data<span style="color:#808030; ">-</span>start disabled<span style="color:#808030; ">&gt;</span>Start<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">timer</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">field</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">value</span><span style="color:#800000; ">"</span> data<span style="color:#808030; ">-</span>days<span style="color:#808030; ">&gt;</span><span style="color:#008c00; ">00</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">label</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Days<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">field</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">value</span><span style="color:#800000; ">"</span> data<span style="color:#808030; ">-</span>hours<span style="color:#808030; ">&gt;</span><span style="color:#008c00; ">00</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">label</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Hours<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">field</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">value</span><span style="color:#800000; ">"</span> data<span style="color:#808030; ">-</span>minutes<span style="color:#808030; ">&gt;</span><span style="color:#008c00; ">00</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">label</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Minutes<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>div <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">field</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">value</span><span style="color:#800000; ">"</span> data<span style="color:#808030; ">-</span>seconds<span style="color:#808030; ">&gt;</span><span style="color:#008c00; ">00</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span>span <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">label</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Seconds<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>span<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> flatpickr JS <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">https://cdn.jsdelivr.net/npm/flatpickr</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> iziToast JS <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> наш скрипт <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">./1-timer.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>html<span style="color:#808030; ">&gt;</span></span></pre>
+<h2>1-timer.js</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">let</span> userSelectedDate <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">null</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">let</span> timerInterval <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">null</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> refs <span style="color:#808030; ">=</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  startBtn<span style="color:#800080; ">:</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">[data-start]</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  dateInput<span style="color:#800080; ">:</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">#datetime-picker</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  days<span style="color:#800080; ">:</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">[data-days]</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  hours<span style="color:#800080; ">:</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">[data-hours]</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  minutes<span style="color:#800080; ">:</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">[data-minutes]</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  seconds<span style="color:#800080; ">:</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">[data-seconds]</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">refs<span style="color:#808030; ">.</span>startBtn<span style="color:#808030; ">.</span>disabled <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">true</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ІНІЦІАЛІЗУЄМО FLATPICKR</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">flatpickr<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">#datetime-picker</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  enableTime<span style="color:#800080; ">:</span> <span style="color:#0f4d75; ">true</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  time_24hr<span style="color:#800080; ">:</span> <span style="color:#0f4d75; ">true</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  defaultDate<span style="color:#800080; ">:</span> <span style="color:#800000; font-weight:bold; ">new</span> <span style="color:#797997; ">Date</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  minuteIncrement<span style="color:#800080; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  onClose<span style="color:#808030; ">(</span>selectedDates<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">const</span> date <span style="color:#808030; ">=</span> selectedDates<span style="color:#808030; ">[</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">!</span>date <span style="color:#808030; ">||</span> date <span style="color:#808030; ">&lt;=</span> <span style="color:#800000; font-weight:bold; ">new</span> <span style="color:#797997; ">Date</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      refs<span style="color:#808030; ">.</span>startBtn<span style="color:#808030; ">.</span>disabled <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">true</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      iziToast<span style="color:#808030; ">.</span>warning<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">        message<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Please choose a date in the future</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        position<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">topRight</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    userSelectedDate <span style="color:#808030; ">=</span> date<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    refs<span style="color:#808030; ">.</span>startBtn<span style="color:#808030; ">.</span>disabled <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">false</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// КНОПКА START</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">refs<span style="color:#808030; ">.</span>startBtn<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">click</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">!</span>userSelectedDate<span style="color:#808030; ">)</span> <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  refs<span style="color:#808030; ">.</span>startBtn<span style="color:#808030; ">.</span>disabled <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">true</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  refs<span style="color:#808030; ">.</span>dateInput<span style="color:#808030; ">.</span>disabled <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">true</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  timerInterval <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">setInterval</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">const</span> timeLeft <span style="color:#808030; ">=</span> userSelectedDate <span style="color:#808030; ">-</span> <span style="color:#800000; font-weight:bold; ">new</span> <span style="color:#797997; ">Date</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>timeLeft <span style="color:#808030; ">&lt;=</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">clearInterval</span><span style="color:#808030; ">(</span>timerInterval<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      updateUI<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span> days<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span> hours<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span> minutes<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span> seconds<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      refs<span style="color:#808030; ">.</span>dateInput<span style="color:#808030; ">.</span>disabled <span style="color:#808030; ">=</span> <span style="color:#0f4d75; ">false</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">const</span> formatted <span style="color:#808030; ">=</span> convertMs<span style="color:#808030; ">(</span>timeLeft<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    updateUI<span style="color:#808030; ">(</span>formatted<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">1000</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ОБНОВЛЕННЯ ІНТЕРФЕЙСУ</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">function</span> updateUI<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span> days<span style="color:#808030; ">,</span> hours<span style="color:#808030; ">,</span> minutes<span style="color:#808030; ">,</span> seconds <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  refs<span style="color:#808030; ">.</span>days<span style="color:#808030; ">.</span>textContent <span style="color:#808030; ">=</span> days<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  refs<span style="color:#808030; ">.</span>hours<span style="color:#808030; ">.</span>textContent <span style="color:#808030; ">=</span> addLeadingZero<span style="color:#808030; ">(</span>hours<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  refs<span style="color:#808030; ">.</span>minutes<span style="color:#808030; ">.</span>textContent <span style="color:#808030; ">=</span> addLeadingZero<span style="color:#808030; ">(</span>minutes<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  refs<span style="color:#808030; ">.</span>seconds<span style="color:#808030; ">.</span>textContent <span style="color:#808030; ">=</span> addLeadingZero<span style="color:#808030; ">(</span>seconds<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ФОРМАТУВАННЯ 0</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">function</span> addLeadingZero<span style="color:#808030; ">(</span>value<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">return</span> <span style="color:#797997; ">String</span><span style="color:#808030; ">(</span>value<span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>padStart<span style="color:#808030; ">(</span><span style="color:#008c00; ">2</span><span style="color:#808030; ">,</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">0</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// РОЗПИЛЕННЯ MS</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">// ────────────────────────────────</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">function</span> convertMs<span style="color:#808030; ">(</span>ms<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> second <span style="color:#808030; ">=</span> <span style="color:#008c00; ">1000</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> minute <span style="color:#808030; ">=</span> second <span style="color:#808030; ">*</span> <span style="color:#008c00; ">60</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> hour <span style="color:#808030; ">=</span> minute <span style="color:#808030; ">*</span> <span style="color:#008c00; ">60</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> day <span style="color:#808030; ">=</span> hour <span style="color:#808030; ">*</span> <span style="color:#008c00; ">24</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> days <span style="color:#808030; ">=</span> <span style="color:#797997; ">Math</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">floor</span><span style="color:#808030; ">(</span>ms <span style="color:#808030; ">/</span> day<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> hours <span style="color:#808030; ">=</span> <span style="color:#797997; ">Math</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">floor</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>ms <span style="color:#808030; ">%</span> day<span style="color:#808030; ">)</span> <span style="color:#808030; ">/</span> hour<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> minutes <span style="color:#808030; ">=</span> <span style="color:#797997; ">Math</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">floor</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>ms <span style="color:#808030; ">%</span> day<span style="color:#808030; ">)</span> <span style="color:#808030; ">%</span> hour<span style="color:#808030; ">)</span> <span style="color:#808030; ">/</span> minute<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> seconds <span style="color:#808030; ">=</span> <span style="color:#797997; ">Math</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">floor</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>ms <span style="color:#808030; ">%</span> day<span style="color:#808030; ">)</span> <span style="color:#808030; ">%</span> hour<span style="color:#808030; ">)</span> <span style="color:#808030; ">%</span> minute<span style="color:#808030; ">)</span> <span style="color:#808030; ">/</span> second<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">return</span> <span style="color:#800080; ">{</span> days<span style="color:#808030; ">,</span> hours<span style="color:#808030; ">,</span> minutes<span style="color:#808030; ">,</span> seconds <span style="color:#800080; ">}</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span></pre>
+
+<img src="images_lab7/task2.1.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task2.2.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task2.3.png" alt="task2.3_1" style="width:50%">

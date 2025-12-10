@@ -1,0 +1,138 @@
+<h2>2-form.html</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">!</span>DOCTYPE html<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>html lang<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">uk</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>meta charset<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">UTF-8</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>meta name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">viewport</span><span style="color:#800000; ">"</span> content<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">width=device-width, initial-scale=1.0</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>title<span style="color:#808030; ">&gt;</span>Feedback Form<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>title<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>style<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>feedback<span style="color:#808030; ">-</span>form <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  width<span style="color:#800080; ">:</span> 420px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  padding<span style="color:#800080; ">:</span> 28px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> white<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 10px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  box<span style="color:#808030; ">-</span>shadow<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span> 6px 20px rgba<span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008000; ">0.08</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  display<span style="color:#800080; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  flex<span style="color:#808030; ">-</span>direction<span style="color:#800080; ">:</span> column<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  gap<span style="color:#800080; ">:</span> 20px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">label <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  font<span style="color:#808030; ">-</span>size<span style="color:#800080; ">:</span> 14px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  font<span style="color:#808030; ">-</span>weight<span style="color:#800080; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  color<span style="color:#800080; ">:</span> #<span style="color:#008c00; ">333</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  display<span style="color:#800080; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  flex<span style="color:#808030; ">-</span>direction<span style="color:#800080; ">:</span> column<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  gap<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#797997; ">input</span><span style="color:#808030; ">,</span> textarea <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  padding<span style="color:#800080; ">:</span> 10px 12px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#800080; ">:</span> 1px solid #c7c7c7<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> #fcfcfc<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  font<span style="color:#808030; ">-</span>size<span style="color:#800080; ">:</span> 15px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#797997; ">input</span><span style="color:#800080; ">:</span>focus<span style="color:#808030; ">,</span> textarea<span style="color:#800080; ">:</span>focus <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  outline<span style="color:#800080; ">:</span> none<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>color<span style="color:#800080; ">:</span> #4972ff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> #fff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  box<span style="color:#808030; ">-</span>shadow<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">0</span> 2px rgba<span style="color:#808030; ">(</span><span style="color:#008c00; ">73</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">114</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span><span style="color:#008000; ">.15</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">button <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  padding<span style="color:#800080; ">:</span> 10px 22px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> #4972ff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#800080; ">:</span> none<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  color<span style="color:#800080; ">:</span> white<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  cursor<span style="color:#800080; ">:</span> pointer<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  margin<span style="color:#808030; ">-</span>top<span style="color:#800080; ">:</span> 10px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  font<span style="color:#808030; ">-</span>size<span style="color:#800080; ">:</span> 15px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  transition<span style="color:#800080; ">:</span> <span style="color:#808030; ">.</span>25s ease<span style="color:#808030; ">-</span><span style="color:#800000; font-weight:bold; ">in</span><span style="color:#808030; ">-</span>out<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">button<span style="color:#800080; ">:</span>hover <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  background<span style="color:#800080; ">:</span> #3c61da<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>style<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>form <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">feedback-form</span><span style="color:#800000; ">"</span> autocomplete<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">off</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      Email</span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#797997; ">input</span> type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">email</span><span style="color:#800000; ">"</span> name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">email</span><span style="color:#800000; ">"</span> autofocus <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      Message</span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>textarea name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">message</span><span style="color:#800000; ">"</span> rows<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">8</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>textarea<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>button type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">submit</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Submit<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>form<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">./2-form.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>html<span style="color:#808030; ">&gt;</span></span></pre>
+<h2>2-form.js</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> form <span style="color:#808030; ">=</span> document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.feedback-form</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> STORAGE_KEY <span style="color:#808030; ">=</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">feedback-form-state</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// 1️⃣ Глобальний об'єкт з пустими значеннями</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">let</span> formData <span style="color:#808030; ">=</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  email<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">  message<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// 2️⃣ Відновлення даних при завантаженні</span></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">const</span> saved <span style="color:#808030; ">=</span> localStorage<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">getItem</span><span style="color:#808030; ">(</span>STORAGE_KEY<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>saved<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> parsed <span style="color:#808030; ">=</span> <span style="color:#797997; ">JSON</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">parse</span><span style="color:#808030; ">(</span>saved<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#696969; ">// підставляємо у форму, якщо є</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>parsed<span style="color:#808030; ">.</span>email<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    form<span style="color:#808030; ">.</span>email<span style="color:#808030; ">.</span>value <span style="color:#808030; ">=</span> parsed<span style="color:#808030; ">.</span>email<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    formData<span style="color:#808030; ">.</span>email <span style="color:#808030; ">=</span> parsed<span style="color:#808030; ">.</span>email<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>parsed<span style="color:#808030; ">.</span>message<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    form<span style="color:#808030; ">.</span>message<span style="color:#808030; ">.</span>value <span style="color:#808030; ">=</span> parsed<span style="color:#808030; ">.</span>message<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    formData<span style="color:#808030; ">.</span>message <span style="color:#808030; ">=</span> parsed<span style="color:#808030; ">.</span>message<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// 3️⃣ Відстеження input (делегування)</span></span>
+<span class="line_wrapper">form<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">input</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> e <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> field <span style="color:#808030; ">=</span> e<span style="color:#808030; ">.</span>target<span style="color:#808030; ">.</span>name<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> value <span style="color:#808030; ">=</span> e<span style="color:#808030; ">.</span>target<span style="color:#808030; ">.</span>value<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">trim</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  formData<span style="color:#808030; ">[</span>field<span style="color:#808030; ">]</span> <span style="color:#808030; ">=</span> value<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  localStorage<span style="color:#808030; ">.</span>setItem<span style="color:#808030; ">(</span>STORAGE_KEY<span style="color:#808030; ">,</span> <span style="color:#797997; ">JSON</span><span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">stringify</span><span style="color:#808030; ">(</span>formData<span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">// 4️⃣ Submit</span></span>
+<span class="line_wrapper">form<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">submit</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> e <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  e<span style="color:#808030; ">.</span>preventDefault<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span><span style="color:#808030; ">!</span>formData<span style="color:#808030; ">.</span>email <span style="color:#808030; ">||</span> <span style="color:#808030; ">!</span>formData<span style="color:#808030; ">.</span>message<span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">alert</span><span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">Fill please all fields</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  console<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">log</span><span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">Submitted data:</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> formData<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#696969; ">// очищення</span></span>
+<span class="line_wrapper">  form<span style="color:#808030; ">.</span>reset<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  formData <span style="color:#808030; ">=</span> <span style="color:#800080; ">{</span> email<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> message<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#800000; ">'</span> <span style="color:#800080; ">}</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  localStorage<span style="color:#808030; ">.</span>removeItem<span style="color:#808030; ">(</span>STORAGE_KEY<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span></pre>
+
+<img src="images_lab7/task3.1.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task3.2.png" alt="task2.3_1" style="width:50%">

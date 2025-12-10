@@ -1,0 +1,119 @@
+<h2>2-snackbar.html</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">!</span>DOCTYPE html<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>html lang<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">uk</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>meta charset<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">UTF-8</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>meta name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">viewport</span><span style="color:#800000; ">"</span> content<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">width=device-width, initial-scale=1.0</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>title<span style="color:#808030; ">&gt;</span>Snackbar <span style="color:#808030; ">-</span> Promise Generator<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>title<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> iziToast CSS <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#800000; font-weight:bold; ">link</span> rel<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">stylesheet</span><span style="color:#800000; ">"</span> href<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>style<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    body <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      font<span style="color:#808030; ">-</span>family<span style="color:#800080; ">:</span> Arial<span style="color:#808030; ">,</span> sans<span style="color:#808030; ">-</span>serif<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 40px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      background<span style="color:#800080; ">:</span> #f4f4f4<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>form <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      display<span style="color:#800080; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      flex<span style="color:#808030; ">-</span>direction<span style="color:#800080; ">:</span> column<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      gap<span style="color:#800080; ">:</span> 22px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 25px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">max</span><span style="color:#808030; ">-</span>width<span style="color:#800080; ">:</span> 350px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      background<span style="color:#800080; ">:</span> #fff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 8px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      box<span style="color:#808030; ">-</span>shadow<span style="color:#800080; ">:</span> <span style="color:#008c00; ">0</span> 4px 14px rgba<span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008000; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    fieldset <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      border<span style="color:#800080; ">:</span> 1px solid #ccc<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 12px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    button <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      padding<span style="color:#800080; ">:</span> 8px 20px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      background<span style="color:#800080; ">:</span> #446aff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#800080; ">:</span> none<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      border<span style="color:#808030; ">-</span>radius<span style="color:#800080; ">:</span> 6px<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      color<span style="color:#800080; ">:</span> #fff<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      cursor<span style="color:#800080; ">:</span> pointer<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      transition<span style="color:#800080; ">:</span> <span style="color:#808030; ">.</span>25s<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    button<span style="color:#800080; ">:</span>hover <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      background<span style="color:#800080; ">:</span> #3655d5<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>style<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>head<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>form <span style="color:#800000; font-weight:bold; ">class</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">form</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      Delay <span style="color:#808030; ">(</span>ms<span style="color:#808030; ">)</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#797997; ">input</span> type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">number</span><span style="color:#800000; ">"</span> name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">delay</span><span style="color:#800000; ">"</span> required <span style="color:#800000; font-weight:bold; ">min</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">10</span><span style="color:#800000; ">"</span> <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>fieldset<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>legend<span style="color:#808030; ">&gt;</span>State<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>legend<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span><span style="color:#797997; ">input</span> type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">radio</span><span style="color:#800000; ">"</span> name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">state</span><span style="color:#800000; ">"</span> value<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">fulfilled</span><span style="color:#800000; ">"</span> required <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span> Fulfilled</span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#808030; ">&lt;</span><span style="color:#797997; ">input</span> type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">radio</span><span style="color:#800000; ">"</span> name<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">state</span><span style="color:#800000; ">"</span> value<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">rejected</span><span style="color:#800000; ">"</span> required <span style="color:#808030; ">/</span><span style="color:#808030; ">&gt;</span> Rejected</span>
+<span class="line_wrapper">      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>label<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>fieldset<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    <span style="color:#808030; ">&lt;</span>button type<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">submit</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Create notification<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>form<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> iziToast JS <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">  &lt;!--</span> our script <span style="color:#808030; ">--</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">./2-snackbar.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>body<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>html<span style="color:#808030; ">&gt;</span></span></pre>
+<h2>2-snackbar.js</h2>
+<pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper">document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.form</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">submit</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> e <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  e<span style="color:#808030; ">.</span>preventDefault<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> delay <span style="color:#808030; ">=</span> <span style="color:#797997; ">Number</span><span style="color:#808030; ">(</span>e<span style="color:#808030; ">.</span>target<span style="color:#808030; ">.</span>delay<span style="color:#808030; ">.</span>value<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> state <span style="color:#808030; ">=</span> e<span style="color:#808030; ">.</span>target<span style="color:#808030; ">.</span>state<span style="color:#808030; ">.</span>value<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#800000; font-weight:bold; ">const</span> promise <span style="color:#808030; ">=</span> <span style="color:#800000; font-weight:bold; ">new</span> Promise<span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>resolve<span style="color:#808030; ">,</span> reject<span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#800000; font-weight:bold; ">setTimeout</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span> <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      <span style="color:#800000; font-weight:bold; ">if</span> <span style="color:#808030; ">(</span>state <span style="color:#808030; ">===</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">fulfilled</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">        resolve<span style="color:#808030; ">(</span>delay<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span> <span style="color:#800000; font-weight:bold; ">else</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">        reject<span style="color:#808030; ">(</span>delay<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span><span style="color:#808030; ">,</span> delay<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  promise</span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span>then<span style="color:#808030; ">(</span>ms <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      iziToast<span style="color:#808030; ">.</span>success<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">        title<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Success</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        message<span style="color:#800080; ">:</span> <span style="color:#800000; ">`</span><span style="color:#0000e6; ">Fulfilled promise in </span><span style="color:#800000; ">${</span><span style="color:#797997; ">ms</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">ms</span><span style="color:#800000; ">`</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        timeout<span style="color:#800080; ">:</span> <span style="color:#008c00; ">2000</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        position<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">topRight</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span></span>
+<span class="line_wrapper">    <span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">catch</span><span style="color:#808030; ">(</span>ms <span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      iziToast<span style="color:#808030; ">.</span>error<span style="color:#808030; ">(</span><span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">        title<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Error</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        message<span style="color:#800080; ">:</span> <span style="color:#800000; ">`</span><span style="color:#0000e6; ">Rejected promise in </span><span style="color:#800000; ">${</span><span style="color:#797997; ">ms</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">ms</span><span style="color:#800000; ">`</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        timeout<span style="color:#800080; ">:</span> <span style="color:#008c00; ">2000</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">        position<span style="color:#800080; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">topRight</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  e<span style="color:#808030; ">.</span>target<span style="color:#808030; ">.</span>reset<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span></pre>
+
+<img src="images_lab7/task4.1.png" alt="task2.3_1" style="width:50%">
+<img src="images_lab7/task4.2.png" alt="task2.3_1" style="width:50%">
