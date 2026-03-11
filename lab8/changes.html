@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>Внесенні зміни у застосунок MELTRIX</h2>
+    </header>
+    <main>
+        <h2>Оновлене головне меню</h2>
+        <h2>HTML-код, JavaScript-код та CSS-код</h2>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+                <span style='color:#808030; '>&lt;</span>li class<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>catalog</span><span
+                    style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>#</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>All Games ▾<span style='color:#808030; '>&lt;</span><span
+                    style='color:#808030; '>/</span>a<span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span
+                    style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span
+                    style='color:#0000e6; '>catalog-dropdown</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>#</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>Shop Publishers<span style='color:#808030; '>&lt;</span><span
+                    style='color:#808030; '>/</span>a<span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>#</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>Shop Genres<span style='color:#808030; '>&lt;</span><span
+                    style='color:#808030; '>/</span>a<span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>#</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>PC Games<span style='color:#808030; '>&lt;</span><span
+                    style='color:#808030; '>/</span>a<span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>#</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>On Sale<span style='color:#808030; '>&lt;</span><span
+                    style='color:#808030; '>/</span>a<span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span
+                    style='color:#800000; '>"</span><span style='color:#0000e6; '>#</span><span style='color:#800000; '>"</span><span
+                    style='color:#808030; '>></span>All Games<span style='color:#808030; '>&lt;</span><span
+                    style='color:#808030; '>/</span>a<span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span
+                    style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+                <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>li<span style='color:#808030; '>></span>
+                    <span style='color:#808030; '>.</span>catalog <span style='color:#800080; '>{</span>
+  <span style='color:#bb7977; font-weight:bold; '>position</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>relative</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#808030; '>.</span>catalog-dropdown <span style='color:#800080; '>{</span>
+  <span style='color:#bb7977; font-weight:bold; '>position</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>absolute</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>top</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>100</span><span style='color:#006600; '>%</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>left</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>background</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>#</span><span style='color:#008000; '>222</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>display</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>none</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>flex-direction</span><span style='color:#808030; '>:</span> column<span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>min-width</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>220</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>border-radius</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>8</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+  <span style='color:#bb7977; font-weight:bold; '>padding</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>15</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#808030; '>.</span>catalog-dropdown <span style='color:#800000; font-weight:bold; '>a</span> <span style='color:#800080; '>{</span>
+  <span style='color:#bb7977; font-weight:bold; '>padding</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>8</span><span style='color:#006600; '>px</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#808030; '>.</span>catalog<span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>hover</span> <span style='color:#808030; '>.</span>catalog-dropdown <span style='color:#800080; '>{</span>
+  <span style='color:#bb7977; font-weight:bold; '>display</span><span style='color:#808030; '>:</span> flex<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+        </pre>
+        <h2>Зображення</h2>
+        <img src="images_lab8/MENU.png" alt="сlass_selector" style="width:100%;">
+
+        <h2>Оновлений функціонал та візуал для іконок мови та кошика а також кнопки рєстрації</h2>
+        <h2>HTML-код, JavaScript-код та CSS-код</h2>
+        <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+                <pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper">     <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"header-actions"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"sign-in"</span><span style="color:#a65700; ">&gt;</span>SIGN IN<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"language-dropdown"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"lang-btn"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/LANGUAGE.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Language"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"lang-menu"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>English<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>Deutsch<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>Français<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>Español<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>Українська<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-dropdown"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-icon"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/PURCHASE.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-preview"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Your cart is empty<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"view-cart-btn"</span><span style="color:#a65700; ">&gt;</span>GO TO CART<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">let cart = JSON<span style="color:#008c00; ">.</span>parse(localStorage<span style="color:#008c00; ">.</span>getItem("cart")) || [];</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function saveCart() {</span>
+<span class="line_wrapper">    localStorage<span style="color:#008c00; ">.</span>setItem("cart", JSON<span style="color:#008c00; ">.</span>stringify(cart));</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function renderCartPreview() {</span>
+<span class="line_wrapper">    const preview = $(".cart-preview");</span>
+<span class="line_wrapper">    if (!preview) return;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    preview<span style="color:#008c00; ">.</span>innerHTML = "";</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    if (cart<span style="color:#008c00; ">.</span>length === <span style="color:#008c00; ">0</span>) {</span>
+<span class="line_wrapper">      preview<span style="color:#008c00; ">.</span>innerHTML = "<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Your cart is empty<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>";</span>
+<span class="line_wrapper">      return;</span>
+<span class="line_wrapper">    }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    cart<span style="color:#008c00; ">.</span>forEach((item, index) =<span style="color:#a65700; ">&gt;</span> {</span>
+<span class="line_wrapper">      preview<span style="color:#008c00; ">.</span>innerHTML += `</span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-preview-item"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"${item.img}"</span><span style="color:#274796; "> </span><span style="color:#074726; ">width</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"40"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>${item<span style="color:#008c00; ">.</span>title}<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"remove-preview"</span><span style="color:#274796; "> </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-index</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"${index}"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      `;</span>
+<span class="line_wrapper">    });</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    preview<span style="color:#008c00; ">.</span>innerHTML += `</span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"view-cart-btn"</span><span style="color:#a65700; ">&gt;</span>GO TO CART<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    `;</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function renderCartModal() {</span>
+<span class="line_wrapper">    const container = $("#cart-items");</span>
+<span class="line_wrapper">    const total = $("#cart-total");</span>
+<span class="line_wrapper">    if (!container) return;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    container<span style="color:#008c00; ">.</span>innerHTML = "";</span>
+<span class="line_wrapper">    let sum = <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    cart<span style="color:#008c00; ">.</span>forEach((item, index) =<span style="color:#a65700; ">&gt;</span> {</span>
+<span class="line_wrapper">      sum += item<span style="color:#008c00; ">.</span>price;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      container<span style="color:#008c00; ">.</span>innerHTML += `</span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-item"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"${item.img}"</span><span style="color:#274796; "> </span><span style="color:#074726; ">width</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"60"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">            <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h4</span><span style="color:#a65700; ">&gt;</span>${item<span style="color:#008c00; ">.</span>title}<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h4</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">            <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>${item<span style="color:#008c00; ">.</span>price}₴<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">            <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"remove"</span><span style="color:#274796; "> </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-index</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"${index}"</span><span style="color:#a65700; ">&gt;</span>Remove<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">        <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      `;</span>
+<span class="line_wrapper">    });</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    total<span style="color:#008c00; ">.</span>textContent = sum + "₴";</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  /* =====================================</span>
+<span class="line_wrapper">     GLOBAL CLICK HANDLER</span>
+<span class="line_wrapper">  ======================================*/</span>
+<span class="line_wrapper">  document<span style="color:#008c00; ">.</span>addEventListener("click", (e) =<span style="color:#a65700; ">&gt;</span> {</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    /* ADD TO CART */</span>
+<span class="line_wrapper">    if (e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>contains("btn-cart")) {</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      const card = e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>closest(".game-card");</span>
+<span class="line_wrapper">      const title = card<span style="color:#008c00; ">.</span>querySelector("img").alt;</span>
+<span class="line_wrapper">      const priceText = card<span style="color:#008c00; ">.</span>querySelector(".new-price")?.textContent ||</span>
+<span class="line_wrapper">                        card<span style="color:#008c00; ">.</span>querySelector(".price").textContent;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      const price = parseInt(priceText<span style="color:#008c00; ">.</span>replace(/\D/g, ""));</span>
+<span class="line_wrapper">      const img = card<span style="color:#008c00; ">.</span>querySelector("img").src;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      cart<span style="color:#008c00; ">.</span>push({ title, price, img });</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      saveCart();</span>
+<span class="line_wrapper">      renderCartPreview();</span>
+<span class="line_wrapper">      renderCartModal();</span>
+<span class="line_wrapper">    }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    /* REMOVE FROM PREVIEW */</span>
+<span class="line_wrapper">    if (e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>contains("remove-preview")) {</span>
+<span class="line_wrapper">      cart<span style="color:#008c00; ">.</span>splice(e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>dataset<span style="color:#008c00; ">.</span>index, <span style="color:#008c00; ">1</span>);</span>
+<span class="line_wrapper">      saveCart();</span>
+<span class="line_wrapper">      renderCartPreview();</span>
+<span class="line_wrapper">      renderCartModal();</span>
+<span class="line_wrapper">    }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    /* REMOVE FROM MODAL */</span>
+<span class="line_wrapper">    if (e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>contains("remove")) {</span>
+<span class="line_wrapper">      cart<span style="color:#008c00; ">.</span>splice(e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>dataset<span style="color:#008c00; ">.</span>index, <span style="color:#008c00; ">1</span>);</span>
+<span class="line_wrapper">      saveCart();</span>
+<span class="line_wrapper">      renderCartPreview();</span>
+<span class="line_wrapper">      renderCartModal();</span>
+<span class="line_wrapper">    }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    /* OPEN CART */</span>
+<span class="line_wrapper">    if (e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>closest("#cart-icon") || e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>contains("view-cart-btn")) {</span>
+<span class="line_wrapper">      $("#cart-modal").style<span style="color:#008c00; ">.</span>display = "flex";</span>
+<span class="line_wrapper">    }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    /* CLOSE CART */</span>
+<span class="line_wrapper">    if (e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>contains("close-cart") || e<span style="color:#008c00; ">.</span>target<span style="color:#008c00; ">.</span>id === "cart-modal") {</span>
+<span class="line_wrapper">      $("#cart-modal").style<span style="color:#008c00; ">.</span>display = "none";</span>
+<span class="line_wrapper">    }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">const cartIcon = document<span style="color:#008c00; ">.</span>querySelector("#cart-icon");</span>
+<span class="line_wrapper">const cartPreview = document<span style="color:#008c00; ">.</span>querySelector(".cart-preview");</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">if (cartIcon &amp;&amp; cartPreview) {</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  let hideTimeout;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function showCart() {</span>
+<span class="line_wrapper">    clearTimeout(hideTimeout);</span>
+<span class="line_wrapper">    cartPreview<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>add("active");</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function hideCart() {</span>
+<span class="line_wrapper">    hideTimeout = setTimeout(() =<span style="color:#a65700; ">&gt;</span> {</span>
+<span class="line_wrapper">      cartPreview<span style="color:#008c00; ">.</span>classList<span style="color:#008c00; ">.</span>remove("active");</span>
+<span class="line_wrapper">    }, <span style="color:#008c00; ">300</span>); // затримка <span style="color:#008c00; ">300</span>мс</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  cartIcon<span style="color:#008c00; ">.</span>addEventListener("mouseenter", showCart);</span>
+<span class="line_wrapper">  cartIcon<span style="color:#008c00; ">.</span>addEventListener("mouseleave", hideCart);</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  cartPreview<span style="color:#008c00; ">.</span>addEventListener("mouseenter", showCart);</span>
+<span class="line_wrapper">  cartPreview<span style="color:#008c00; ">.</span>addEventListener("mouseleave", hideCart);</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  renderCartPreview();</span>
+<span class="line_wrapper">  renderCartModal();</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">});</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.language-dropdown {</span>
+<span class="line_wrapper">  position: relative;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.lang-menu {</span>
+<span class="line_wrapper">  position: absolute;</span>
+<span class="line_wrapper">  top: <span style="color:#008c00; ">110</span>%;</span>
+<span class="line_wrapper">  right: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  background: #<span style="color:#008c00; ">222</span>;</span>
+<span class="line_wrapper">  display: none;</span>
+<span class="line_wrapper">  flex-direction: column;</span>
+<span class="line_wrapper">  padding: <span style="color:#008c00; ">10</span>px;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">8</span>px;</span>
+<span class="line_wrapper">  min-width: <span style="color:#008c00; ">150</span>px;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.language-dropdown:hover .lang-menu {</span>
+<span class="line_wrapper">  display: flex;</span>
+<span class="line_wrapper">  transition: <span style="color:#008c00; ">0.3</span>s;</span>
+<span class="line_wrapper">  transition-delay: <span style="color:#008c00; ">0.2</span>s;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.language-wrapper:hover .language-dropdown {</span>
+<span class="line_wrapper">  opacity: <span style="color:#008c00; ">1</span>;</span>
+<span class="line_wrapper">  visibility: visible;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.lang-menu span {</span>
+<span class="line_wrapper">  padding: <span style="color:#008c00; ">6</span>px <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  cursor: pointer;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.lang-menu span:hover {</span>
+<span class="line_wrapper">  color: #<span style="color:#008c00; ">00</span>ff66;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">/* language button */</span>
+<span class="line_wrapper">.lang-btn {</span>
+<span class="line_wrapper">  background: #<span style="color:#008c00; ">1</span>a1a1a;</span>
+<span class="line_wrapper">  border: none;</span>
+<span class="line_wrapper">  padding: <span style="color:#008c00; ">8</span>px <span style="color:#008c00; ">12</span>px;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">8</span>px;</span>
+<span class="line_wrapper">  cursor: pointer;</span>
+<span class="line_wrapper">  color: white;</span>
+<span class="line_wrapper">  transition: <span style="color:#008c00; ">0.3</span>s;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.lang-btn:hover {</span>
+<span class="line_wrapper">  background: #<span style="color:#008c00; ">00</span>ff66;</span>
+<span class="line_wrapper">  color: black;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.cart-dropdown {</span>
+<span class="line_wrapper">  position: relative;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.cart-preview {</span>
+<span class="line_wrapper">  position: absolute;</span>
+<span class="line_wrapper">  top: <span style="color:#008c00; ">110</span>%;</span>
+<span class="line_wrapper">  right: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  width: <span style="color:#008c00; ">260</span>px;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  background: #<span style="color:#008c00; ">1</span>e1e1e;</span>
+<span class="line_wrapper">  padding: <span style="color:#008c00; ">15</span>px;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">10</span>px;</span>
+<span class="line_wrapper">  z-index: <span style="color:#008c00; ">1000</span>;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  /* прихований стан */</span>
+<span class="line_wrapper">  opacity: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  visibility: hidden;</span>
+<span class="line_wrapper">  pointer-events: none;</span>
+<span class="line_wrapper">  transform: translateY(<span style="color:#008c00; ">10</span>px);</span>
+<span class="line_wrapper">  transition: opacity <span style="color:#008c00; ">0.25</span>s ease, transform <span style="color:#008c00; ">0.25</span>s ease;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.cart-preview<span style="color:#008c00; ">.</span>active {</span>
+<span class="line_wrapper">  opacity: <span style="color:#008c00; ">1</span>;</span>
+<span class="line_wrapper">  visibility: visible;</span>
+<span class="line_wrapper">  pointer-events: auto;</span>
+<span class="line_wrapper">  transform: translateY(<span style="color:#008c00; ">0</span>);</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.cart-preview-item {</span>
+<span class="line_wrapper">  display: flex;</span>
+<span class="line_wrapper">  justify-content: space-between;</span>
+<span class="line_wrapper">  align-items: center;</span>
+<span class="line_wrapper">  margin-bottom: <span style="color:#008c00; ">10</span>px;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.view-cart-btn {</span>
+<span class="line_wrapper">  width: <span style="color:#008c00; ">100</span>%;</span>
+<span class="line_wrapper">  padding: <span style="color:#008c00; ">8</span>px;</span>
+<span class="line_wrapper">  background: #ff3c00;</span>
+<span class="line_wrapper">  color: white;</span>
+<span class="line_wrapper">  border: none;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">6</span>px;</span>
+<span class="line_wrapper">  cursor: pointer;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.close-cart {</span>
+<span class="line_wrapper">  position: absolute;</span>
+<span class="line_wrapper">  top: <span style="color:#008c00; ">15</span>px;</span>
+<span class="line_wrapper">  right: <span style="color:#008c00; ">20</span>px;</span>
+<span class="line_wrapper">  font-size: <span style="color:#008c00; ">26</span>px;</span>
+<span class="line_wrapper">  cursor: pointer;</span>
+<span class="line_wrapper">  color: #fff;</span>
+<span class="line_wrapper">  transition: <span style="color:#008c00; ">0.3</span>s;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.close-cart:hover {</span>
+<span class="line_wrapper">  color: #<span style="color:#008c00; ">00</span>ff66;</span>
+<span class="line_wrapper">  transform: scale(<span style="color:#008c00; ">1.2</span>);</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.cart-modal {</span>
+<span class="line_wrapper">  position: fixed;</span>
+<span class="line_wrapper">  top: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  right: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  height: <span style="color:#008c00; ">100</span>vh;</span>
+<span class="line_wrapper">  width: <span style="color:#008c00; ">400</span>px;</span>
+<span class="line_wrapper">  background: #<span style="color:#008c00; ">111</span>;</span>
+<span class="line_wrapper">  z-index: <span style="color:#008c00; ">9999</span>;</span>
+<span class="line_wrapper">  overflow-y: auto;</span>
+<span class="line_wrapper">  scrollbar-width: none; /* Firefox */</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.cart-modal::-webkit-scrollbar {</span>
+<span class="line_wrapper">  display: none; /* Chrome */</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">header .sign-in {</span>
+<span class="line_wrapper">  padding: <span style="color:#008c00; ">10</span>px <span style="color:#008c00; ">26</span>px;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">25</span>px;</span>
+<span class="line_wrapper">  border: none;</span>
+<span class="line_wrapper">  font-weight: <span style="color:#008c00; ">600</span>;</span>
+<span class="line_wrapper">  letter-spacing: <span style="color:#008c00; ">0.5</span>px;</span>
+<span class="line_wrapper">  color: #fff;</span>
+<span class="line_wrapper">  cursor: pointer;</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  background: linear-gradient(<span style="color:#008c00; ">45</span>deg, #<span style="color:#008c00; ">00</span>ff88, #<span style="color:#008c00; ">00</span>c853);</span>
+<span class="line_wrapper">  box-shadow: <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">4</span>px <span style="color:#008c00; ">15</span>px rgba(<span style="color:#008c00; ">0</span>,<span style="color:#008c00; ">255</span>,<span style="color:#008c00; ">120</span>,<span style="color:#008c00; ">0.35</span>);</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  transition: all <span style="color:#008c00; ">0.3</span>s ease;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">header .sign-in:hover {</span>
+<span class="line_wrapper">  transform: translateY(-<span style="color:#008c00; ">2</span>px) scale(<span style="color:#008c00; ">1.04</span>);</span>
+<span class="line_wrapper">  box-shadow: <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">6</span>px <span style="color:#008c00; ">20</span>px rgba(<span style="color:#008c00; ">0</span>,<span style="color:#008c00; ">255</span>,<span style="color:#008c00; ">120</span>,<span style="color:#008c00; ">0.6</span>);</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.remove {</span>
+<span class="line_wrapper">  display: inline-block;</span>
+<span class="line_wrapper">  margin-top: <span style="color:#008c00; ">5</span>px;</span>
+<span class="line_wrapper">  color: #aaa;</span>
+<span class="line_wrapper">  cursor: pointer;</span>
+<span class="line_wrapper">  font-size: <span style="color:#008c00; ">14</span>px;</span>
+<span class="line_wrapper">  transition: <span style="color:#008c00; ">0.25</span>s;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.remove:hover {</span>
+<span class="line_wrapper">  color: #ff3333;</span>
+<span class="line_wrapper">  text-shadow: <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">8</span>px rgba(<span style="color:#008c00; ">255</span>, <span style="color:#008c00; ">0</span>, <span style="color:#008c00; ">0</span>, <span style="color:#008c00; ">0.7</span>);</span>
+<span class="line_wrapper">  transform: scale(<span style="color:#008c00; ">1.05</span>);</span>
+<span class="line_wrapper">}</span></pre>
+        </pre>
+        <h2>Зображення</h2>
+        <img src="images_lab8/LANG&SIGN.png" alt="сlass_selector" style="width:100%;">
+        <img src="images_lab8/CART.png" alt="сlass_selector" style="width:100%;">
+
+                <h2>Оновлений візуал для модального вікна реєстрації,детальнішої інформації та кошика</h2>
+        <h2>HTML-код, JavaScript-код та CSS-код</h2>
+            <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+                <pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper">     <span style="color:#808030; ">.</span>modal-content <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">relative</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>close-btn <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">absolute</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">15</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">26</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">aaa</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">25</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">user-select</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>close-btn<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff88</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transform</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">scale</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">1.15</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>modal <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">fixed</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  inset<span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">align-items</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.7</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">9999</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>modal-content <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">111</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">30</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">max-width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">90</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">header</span> <span style="color:#808030; ">.</span>sign-in <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">10</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">26</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">25</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">600</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">letter-spacing</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.5</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">fff</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">linear-gradient</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">45</span><span style="color:#006600; ">deg</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff88</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00c853</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">4</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">15</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">120</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.35</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">all</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span> <span style="color:#074726; ">ease</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#800000; font-weight:bold; ">header</span> <span style="color:#808030; ">.</span>sign-in<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transform</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">translateY</span><span style="color:#808030; ">(</span><span style="color:#808030; ">-</span><span style="color:#008c00; ">2</span><span style="color:#006600; ">px</span><span style="color:#808030; ">)</span> <span style="color:#400000; ">scale</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">1.04</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">6</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">120</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.6</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">#</span>modal-go <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">margin-top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">8</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">700</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">letter-spacing</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">000</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">linear-gradient</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">45</span><span style="color:#006600; ">deg</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff88</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00c853</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">4</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">15</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">120</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.35</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">all</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span> <span style="color:#074726; ">ease</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">#</span>modal-go<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transform</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">translateY</span><span style="color:#808030; ">(</span><span style="color:#808030; ">-</span><span style="color:#008c00; ">2</span><span style="color:#006600; ">px</span><span style="color:#808030; ">)</span> <span style="color:#400000; ">scale</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">1.03</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">6</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">120</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.6</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-modal <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">fixed</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  inset<span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.75</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  backdrop-filter<span style="color:#808030; ">:</span> blur<span style="color:#808030; ">(</span><span style="color:#008c00; ">6</span><span style="color:#006600; ">px</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">align-items</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2000</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">animation</span><span style="color:#808030; ">:</span> fadeIn <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span> <span style="color:#074726; ">ease</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-wrapper <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">relative</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">420</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">40</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">linear-gradient</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">145</span><span style="color:#006600; ">deg</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">141414</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">1c1c1c</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">30</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">102</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.3</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">animation</span><span style="color:#808030; ">:</span> slideUp <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span> <span style="color:#074726; ">ease</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-title <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">text-align</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">margin-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">b3c5ba</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">/* close button */</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-close <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">absolute</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">15</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">22</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">2</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-close<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff66</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transform</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">scale</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">1.2</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">/* tabs */</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-tabs <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">margin-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">10</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">overflow</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">hidden</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-tabs <span style="color:#800000; font-weight:bold; ">button</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">flex</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">222</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">bold</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-tabs <span style="color:#808030; ">.</span>active <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">a1b6a9</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">000</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">/* forms */</span></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-form <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">flex-direction</span><span style="color:#808030; ">:</span> column<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  gap<span style="color:#808030; ">:</span> <span style="color:#008c00; ">15</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-form<span style="color:#808030; ">.</span>active <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> flex<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-form <span style="color:#800000; font-weight:bold; ">input</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">8</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">2a2a2a</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#797997; ">white</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-form <span style="color:#800000; font-weight:bold; ">input</span><span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">focus</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">outline</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2</span><span style="color:#006600; ">px</span> <span style="color:#074726; ">solid</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff66</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-form <span style="color:#800000; font-weight:bold; ">button</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">8</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff66</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">bold</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>auth-form <span style="color:#800000; font-weight:bold; ">button</span><span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00cc55</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>modal <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">fixed</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">left</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">vw</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">vh</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.7</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">align-items</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">animation</span><span style="color:#808030; ">:</span> fadeIn <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span> <span style="color:#074726; ">ease</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">200</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>form-modal <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">fixed</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    inset<span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.7</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#bb7977; font-weight:bold; ">align-items</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">9999</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>modal-content <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">background</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">111</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">90</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">max-width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">text-align</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">animation</span><span style="color:#808030; ">:</span> scaleIn <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">3</span><span style="color:#006600; ">s</span> <span style="color:#074726; ">ease</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2</span><span style="color:#006600; ">px</span> <span style="color:#074726; ">solid</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff66</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>modal-content <span style="color:#800000; font-weight:bold; ">img</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">200</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">auto</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">margin-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#808030; ">.</span>close-btn <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">absolute</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">00ff66</span><span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"><span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">&lt;<span style="color:#800000; font-weight:bold; ">div</span> id="form-modal" class="auth-modal"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">      &lt;<span style="color:#800000; font-weight:bold; ">div</span> class="auth-wrapper"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">span</span> class="auth-close"<span style="color:#808030; ">&gt;</span>×&lt;/<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">h2</span> class="auth-title"<span style="color:#808030; ">&gt;</span>Welcome to MELTRIX&lt;/<span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">div</span> class="auth-tabs"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">button</span> id="tab-login" class="active"<span style="color:#808030; ">&gt;</span>Sign In&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">button</span> id="tab-register"<span style="color:#808030; ">&gt;</span>Register&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">form</span> id="login-form" class="auth-form active"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">input</span> type="email" placeholder="Email" required<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">input</span> type="password" placeholder="Password" required<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">button</span> type="submit"<span style="color:#808030; ">&gt;</span>SIGN IN&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;/<span style="color:#800000; font-weight:bold; ">form</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">form</span> id="register-form" class="auth-form"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">input</span> type="<span style="color:#800000; font-weight:bold; ">text</span>" placeholder="Username" required<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">input</span> type="email" placeholder="Email" required<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">input</span> type="password" placeholder="Password" required<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">button</span> type="submit"<span style="color:#808030; ">&gt;</span>REGISTER&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;/<span style="color:#800000; font-weight:bold; ">form</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    </span>
+<span class="line_wrapper">      &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">    &lt;!--</span> INFO MODAL<span style="color:#696969; "> --&gt;</span></span>
+<span class="line_wrapper">    &lt;<span style="color:#800000; font-weight:bold; ">div</span> id="modal" class="modal"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      &lt;<span style="color:#800000; font-weight:bold; ">div</span> class="modal-content"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">span</span> class="close-btn"<span style="color:#808030; ">&gt;</span>×&lt;/<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">img</span> id="modal-img"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">h2</span> id="modal-title"<span style="color:#808030; ">&gt;</span>&lt;/<span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">p</span> id="modal-desc"<span style="color:#808030; ">&gt;</span>&lt;/<span style="color:#800000; font-weight:bold; ">p</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;<span style="color:#800000; font-weight:bold; ">button</span> id="modal-go"<span style="color:#808030; ">&gt;</span>VIEW GAMES&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">        &lt;!--</span> CART MODAL<span style="color:#696969; "> --&gt;</span></span>
+<span class="line_wrapper">    &lt;<span style="color:#800000; font-weight:bold; ">div</span> id="cart-modal" class="modal"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      &lt;<span style="color:#800000; font-weight:bold; ">div</span> class="modal-content cart"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">span</span> class="close-cart"<span style="color:#808030; ">&gt;</span>×&lt;/<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#808030; ">&gt;</span>Your Cart&lt;/<span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">div</span> id="cart-items"<span style="color:#808030; ">&gt;</span>&lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">div</span> class="cart-footer"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">            &lt;<span style="color:#800000; font-weight:bold; ">strong</span><span style="color:#808030; ">&gt;</span>Total<span style="color:#808030; ">:</span> &lt;<span style="color:#800000; font-weight:bold; ">span</span> id="cart-total"<span style="color:#808030; ">&gt;</span>0₴&lt;/<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span>&lt;/<span style="color:#800000; font-weight:bold; ">strong</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  let cart = JSON<span style="color:#808030; ">.</span>parse(localStorage<span style="color:#808030; ">.</span>getItem("cart")) || <span style="color:#808030; ">[</span><span style="color:#808030; ">]</span><span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function saveCart() <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    localStorage.setItem("cart", JSON.stringify(cart))<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function renderCartPreview() <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    const preview = $(".cart-preview")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    if (!preview) return<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    preview.innerHTML = ""<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    if (cart.length === 0) {</span>
+<span class="line_wrapper">      preview.innerHTML = "&lt;p&gt;Your cart is empty&lt;/p&gt;"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      return<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    cart<span style="color:#808030; ">.</span>forEach((item<span style="color:#808030; ">,</span> index) =<span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      preview.innerHTML += `</span>
+<span class="line_wrapper">        &lt;div class="cart-preview-item"&gt;</span>
+<span class="line_wrapper">          &lt;img src="${item.img<span style="color:#800080; ">}</span>" width="40"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span>$<span style="color:#800080; ">{</span>item.title<span style="color:#800080; ">}</span>&lt;/<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">button</span> class="remove-preview" data-index="$<span style="color:#800080; ">{</span>index<span style="color:#800080; ">}</span>"<span style="color:#808030; ">&gt;</span>&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      `<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    preview<span style="color:#808030; ">.</span>innerHTML <span style="color:#808030; ">+</span>= `</span>
+<span class="line_wrapper">      &lt;<span style="color:#800000; font-weight:bold; ">button</span> class="view-cart-btn"<span style="color:#808030; ">&gt;</span>GO TO CART&lt;/<span style="color:#800000; font-weight:bold; ">button</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">    `<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function renderCartModal() <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    const container = $("#cart-items")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    const total = $("#cart-total")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    if (!container) return<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    container.innerHTML = ""<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    let sum = 0<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    cart.forEach((item, index) =&gt; {</span>
+<span class="line_wrapper">      sum += item.price<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">      container.innerHTML += `</span>
+<span class="line_wrapper">        &lt;div class="cart-item"&gt;</span>
+<span class="line_wrapper">          &lt;img src="${item.img<span style="color:#800080; ">}</span>" width="60"<span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">            &lt;<span style="color:#800000; font-weight:bold; ">h4</span><span style="color:#808030; ">&gt;</span>$<span style="color:#800080; ">{</span>item.title<span style="color:#800080; ">}</span>&lt;/<span style="color:#800000; font-weight:bold; ">h4</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">            &lt;<span style="color:#800000; font-weight:bold; ">p</span><span style="color:#808030; ">&gt;</span>$<span style="color:#800080; ">{</span>item.price<span style="color:#800080; ">}</span>₴&lt;/<span style="color:#800000; font-weight:bold; ">p</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">            &lt;<span style="color:#800000; font-weight:bold; ">span</span> class="remove" data-index="$<span style="color:#800080; ">{</span>index<span style="color:#800080; ">}</span>"<span style="color:#808030; ">&gt;</span>Remove&lt;/<span style="color:#800000; font-weight:bold; ">span</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">          &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">        &lt;/<span style="color:#800000; font-weight:bold; ">div</span><span style="color:#808030; ">&gt;</span></span>
+<span class="line_wrapper">      `<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    total<span style="color:#808030; ">.</span>textContent = sum <span style="color:#808030; ">+</span> "₴"<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#696969; ">/* ========================= AUTH MODAL ==========================*/</span></span>
+<span class="line_wrapper">  const signInBtn = $("<span style="color:#808030; ">.</span>sign-in")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // кнопка у хедері </span>
+<span class="line_wrapper">  const formModal = $("<span style="color:#808030; ">#</span>form-modal")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // модалка </span>
+<span class="line_wrapper">  const authClose = $("<span style="color:#808030; ">.</span>auth-close")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // кнопка X </span>
+<span class="line_wrapper">  const authForms = $$("<span style="color:#808030; ">.</span>auth-form")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // всі форми </span>
+<span class="line_wrapper">  const loginFormElement = $("<span style="color:#808030; ">#</span>login-form")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // форма логіну </span>
+<span class="line_wrapper">  function openAuthModal() <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    formModal.style.display = "flex"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">  function closeAuthModal() <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    formModal.style.display = "none"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    authForms.forEach(form =&gt; {</span>
+<span class="line_wrapper">      form.querySelectorAll("input").forEach(input =&gt; input.value = "")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper">  if (signInBtn &amp;&amp; formModal) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    window.addEventListener("click", (e) =&gt; {</span>
+<span class="line_wrapper">      if (e.target === formModal) {</span>
+<span class="line_wrapper">        formModal.style.display = "none"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">    <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    // Відкрити модалку </span>
+<span class="line_wrapper">    signInBtn<span style="color:#808030; ">.</span>addEventListener("click"<span style="color:#808030; ">,</span> (e) =<span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      e.stopPropagation()<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      openAuthModal()<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    // Закрити по кнопці X </span>
+<span class="line_wrapper">    if (authClose) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      authClose.addEventListener("click", closeAuthModal)<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">    // Закрити по кліку поза формою </span>
+<span class="line_wrapper">    formModal<span style="color:#808030; ">.</span>addEventListener("click"<span style="color:#808030; ">,</span> (e) =<span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      if (e.target === formModal) {</span>
+<span class="line_wrapper">        closeAuthModal()<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">    <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    // ОБРОБКА КНОПКИ SIGN IN (submit) </span>
+<span class="line_wrapper">    if (loginFormElement) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      loginFormElement.addEventListener("submit", (e) =&gt; {</span>
+<span class="line_wrapper">        e.preventDefault()<span style="color:#800080; ">;</span> // зупиняємо перезавантаження </span>
+<span class="line_wrapper">        const email = loginFormElement.querySelector("input[type='email']").value<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">        const password = loginFormElement.querySelector("input[type='password']").value<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">        if (email.trim() === "" || password.trim() === "") {</span>
+<span class="line_wrapper">          alert("Please fill in all fields")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">          return<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">        <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">        // тут можна додати перевірку або авторизацію</span>
+<span class="line_wrapper">        alert("Successfully signed in!")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">        closeAuthModal()<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // закриваємо і очищаємо </span>
+<span class="line_wrapper">      <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#696969; ">/* ========================= AUTH TABS ==========================*/</span></span>
+<span class="line_wrapper">  const tabLogin = $("<span style="color:#808030; ">#</span>tab-login")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const tabRegister = $("<span style="color:#808030; ">#</span>tab-register")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const loginForm = $("<span style="color:#808030; ">#</span>login-form")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const registerForm = $("<span style="color:#808030; ">#</span>register-form")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  if (tabLogin &amp;&amp; tabRegister) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    tabLogin.addEventListener("click", () =&gt; {</span>
+<span class="line_wrapper">      tabLogin.classList.add("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      tabRegister.classList.remove("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      loginForm.classList.add("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      registerForm.classList.remove("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    tabRegister<span style="color:#808030; ">.</span>addEventListener("click"<span style="color:#808030; ">,</span> () =<span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      tabRegister.classList.add("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      tabLogin.classList.remove("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      registerForm.classList.add("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">      loginForm.classList.remove("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#696969; ">/* ========================= MODAL LOGIC ==========================*/</span></span>
+<span class="line_wrapper">  const modal = $("<span style="color:#808030; ">#</span>modal")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const modalImg = $("<span style="color:#808030; ">#</span>modal-img")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const modalTitle = $("<span style="color:#808030; ">#</span>modal-title")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const modalDesc = $("<span style="color:#808030; ">#</span>modal-desc")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  const closeBtn = $("<span style="color:#808030; ">.</span>close-btn")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function openModal(card) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    if (!modal) return<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    modalImg.src = card.dataset.img<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    modalTitle.textContent = card.dataset.title<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    modalDesc.textContent = card.dataset.description<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    modal.style.display = "flex"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper">  if (closeBtn &amp;&amp; modal) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    closeBtn.addEventListener("click", () =&gt; {</span>
+<span class="line_wrapper">      modal.style.display = "none"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">    window<span style="color:#808030; ">.</span>addEventListener("click"<span style="color:#808030; ">,</span> (e) =<span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">      if (e.target === modal) modal.style.display = "none"<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper">  <span style="color:#696969; ">/* ========================= EVENT DELEGATION (CARDS) ==========================*/</span></span>
+<span class="line_wrapper">  document<span style="color:#808030; ">.</span>addEventListener("click"<span style="color:#808030; ">,</span> (e) =<span style="color:#808030; ">&gt;</span> <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    const publisher = e.target.closest(".publisher-card")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    const genre = e.target.closest(".genres-card")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">    if (publisher) openModal(publisher)<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    if (genre) openModal(genre)<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span>)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#696969; ">/* =====================================</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">   CART HOVER DELAY LOGIC</span></span>
+<span class="line_wrapper"><span style="color:#696969; ">=====================================*/</span></span>
+<span class="line_wrapper">const cartIcon = document<span style="color:#808030; ">.</span>querySelector("<span style="color:#808030; ">#</span>cart-icon")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">const cartPreview = document<span style="color:#808030; ">.</span>querySelector("<span style="color:#808030; ">.</span>cart-preview")<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">if (cartIcon &amp;&amp; cartPreview) <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  let hideTimeout<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function showCart() {</span>
+<span class="line_wrapper">    clearTimeout(hideTimeout)<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    cartPreview.classList.add("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">  <span style="color:#800080; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  function hideCart() <span style="color:#800080; ">{</span></span>
+<span class="line_wrapper">    hideTimeout = setTimeout(() =&gt; {</span>
+<span class="line_wrapper">      cartPreview.classList.remove("active")<span style="color:#800080; ">;</span></span>
+<span class="line_wrapper">    <span style="color:#800080; ">}</span><span style="color:#808030; ">,</span> 300)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span> // затримка 300мс</span>
+<span class="line_wrapper">  <span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  cartIcon<span style="color:#808030; ">.</span>addEventListener("mouseenter"<span style="color:#808030; ">,</span> showCart)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  cartIcon<span style="color:#808030; ">.</span>addEventListener("mouseleave"<span style="color:#808030; ">,</span> hideCart)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  cartPreview<span style="color:#808030; ">.</span>addEventListener("mouseenter"<span style="color:#808030; ">,</span> showCart)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  cartPreview<span style="color:#808030; ">.</span>addEventListener("mouseleave"<span style="color:#808030; ">,</span> hideCart)<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"><span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">}</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  renderCartPreview()<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper">  renderCartModal()<span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; "></span><span style="color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; ">;</span></span></pre>
+            </pre>
+        <h2>Зображення</h2>
+        <img src="images_lab8/REGISTRATION.png" alt="сlass_selector" style="width:100%;">
+        <img src="images_lab8/DETAILS_MODAL.png" alt="сlass_selector" style="width:100%;">
+        <img src="images_lab8/CART_MODAL.png" alt="сlass_selector" style="width:100%;">
+
+                <h2>Оновлений функціонал каруселі та візуал для тексту у блоках перегляду ігор</h2>
+        <h2>HTML-код, JavaScript-код та CSS-код</h2>
+            <pre class="code_syntax" style="color:#000020;background:#f6f8ff;">
+                <pre class="code_syntax" style="color:#000000;background:#ffffff;"><span class="line_wrapper"> <span style="color:#696969; ">&lt;!-- SHOP BY PUBLISHER --&gt;</span></span>
+<span class="line_wrapper"><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">section</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publishers"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"section-header"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>SHOP BY PUBLISHER<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"view-all"</span><span style="color:#a65700; ">&gt;</span>VIEW ALL<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"carousel"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"carousel-track"</span><span style="color:#274796; "> </span><span style="color:#074726; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisherTrack"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Bethesda"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Легендарний видавець, відомий іграми з відкритим світом та культовими RPG."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Bethesda.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Bethesda.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Bethesda"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Annapurna"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Видавець атмосферних інді-проєктів з акцентом на сюжет та мистецький стиль."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Annapurna.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Annapurna.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Annapurna"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Warner Bros"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Великий видавець AAA-проєктів за популярними кінофраншизами."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Warner_Bros..png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Warner_Bros..png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Warner Bros"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Play Station"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Преміальні ексклюзиви та блокбастери зі всесвіту PlayStation Studios."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Play_Station.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Play_Station.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Play Station"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Square Enix"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Японський видавець світових хітів у жанрах RPG та пригод."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Square_Enix.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Square_Enix.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Square Enix"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Team17"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Відомі інді-проєктами та легендарною серією Worms."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Team17.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Team17.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Team17"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"ThqNordic"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Видавець ремастерів і різнопланових AA-проєктів."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/ThqNordic.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/ThqNordic.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"ThqNordic"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ubisoft"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Французький гігант індустрії — творці Assassin's Creed, Far Cry та багатьох інших."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Ubisoft.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/Ubisoft.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ubisoft"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"publisher-card"</span><span style="color:#274796; "> </span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"2K"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Видавець спортивних симуляторів та відомих AAA-проєктів."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/2K.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_publisher/2K.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"2K"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">section</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"><span style="color:#696969; ">&lt;!-- SHOP BY GENRE --&gt;</span></span>
+<span class="line_wrapper"><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">section</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"section-header"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>SHOP BY GENRE<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"view-all"</span><span style="color:#a65700; ">&gt;</span>VIEW ALL<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"carousel"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"carousel-track"</span><span style="color:#274796; "> </span><span style="color:#074726; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genreTrack"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"ACTION"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Динамічні ігри з яскравими битвами та інтенсивним геймплеєм."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/action.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/action.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Action"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"ADVANTURE"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ігри з акцентом на сюжет, дослідження та занурення у світ."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/adventure.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/adventure.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Adventure"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"CASUAL"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Легкі та невимушені ігри для коротких сесій."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/casual.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/casual.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Casual"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"INDIE"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Незалежні проєкти зі свіжими ідеями та унікальною атмосферою."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/indie.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/indie.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Indie"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"RPG"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ігри з розвитком персонажа, вибором шляху та глибокими сюжетами."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/rpg.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/rpg.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"RPG"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"SHOOTER"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Екшен-ігри з динамічними перестрілками та швидким геймплеєм."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/shooter.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/shooter.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Shooter"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"SIMULATION"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ігри, що моделюють діяльність чи систему — від ферм до польотів."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/simulation.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/simulation.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Simulation"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"STRATEGY"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ігри з тактичним та стратегічним плануванням."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/strategy.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/strategy.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Strategy"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"genres-card"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-</span><span style="color:#074726; ">title</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"VR"</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-description</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Ігри для віртуальної реальності з повним зануренням у геймплей."</span><span style="color:#274796; "></span></span>
+<span class="line_wrapper"><span style="color:#274796; ">          </span><span style="color:#074726; ">data</span><span style="color:#274796; ">-img</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/vr.png"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"Pics/shop_by_genre/vr.png"</span><span style="color:#274796; "> </span><span style="color:#074726; ">alt</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"VR"</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">    <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper">  <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">section</span><span style="color:#a65700; ">&gt;</span></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.carousel {</span>
+<span class="line_wrapper">  overflow: hidden;</span>
+<span class="line_wrapper">  width: <span style="color:#008c00; ">100</span>%;</span>
+<span class="line_wrapper">  position: relative;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.carousel-track {</span>
+<span class="line_wrapper">  display: flex;</span>
+<span class="line_wrapper">  gap: <span style="color:#008c00; ">20</span>px;</span>
+<span class="line_wrapper">  will-change: transform;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">/* пауза при наведенні */</span>
+<span class="line_wrapper">.carousel:hover .carousel-track {</span>
+<span class="line_wrapper">  animation-play-state: paused;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">/* ВАЖЛИВО: рух рівно на половину */</span>
+<span class="line_wrapper">@keyframes infiniteScroll {</span>
+<span class="line_wrapper">  from {</span>
+<span class="line_wrapper">    transform: translateX(<span style="color:#008c00; ">0</span>);</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper">  to {</span>
+<span class="line_wrapper">    transform: translateX(-<span style="color:#008c00; ">150</span>%);</span>
+<span class="line_wrapper">  }</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.section-header {</span>
+<span class="line_wrapper">  display: flex;</span>
+<span class="line_wrapper">  justify-content: space-between;</span>
+<span class="line_wrapper">  align-items: center;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.publisher-card {</span>
+<span class="line_wrapper">  min-width: <span style="color:#008c00; ">250</span>px;</span>
+<span class="line_wrapper">  height: <span style="color:#008c00; ">150</span>px;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">10</span>px;</span>
+<span class="line_wrapper">  overflow: hidden;</span>
+<span class="line_wrapper">  flex-shrink: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  transition: transform <span style="color:#008c00; ">0.3</span>s, box-shadow <span style="color:#008c00; ">0.3</span>s;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper">.publisher-card img {</span>
+<span class="line_wrapper">  width: <span style="color:#008c00; ">100</span>%;</span>
+<span class="line_wrapper">  height: <span style="color:#008c00; ">100</span>%;</span>
+<span class="line_wrapper">  object-fit: cover;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper">.publisher-card:hover {</span>
+<span class="line_wrapper">  transform: scale(<span style="color:#008c00; ">1.05</span>);</span>
+<span class="line_wrapper">  box-shadow: <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">15</span>px #<span style="color:#008c00; ">00</span>ff66;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span>
+<span class="line_wrapper">.genres-card {</span>
+<span class="line_wrapper">  min-width: <span style="color:#008c00; ">250</span>px;</span>
+<span class="line_wrapper">  height: <span style="color:#008c00; ">150</span>px;</span>
+<span class="line_wrapper">  border-radius: <span style="color:#008c00; ">10</span>px;</span>
+<span class="line_wrapper">  overflow: hidden;</span>
+<span class="line_wrapper">  flex-shrink: <span style="color:#008c00; ">0</span>;</span>
+<span class="line_wrapper">  transition: transform <span style="color:#008c00; ">0.3</span>s, box-shadow <span style="color:#008c00; ">0.3</span>s;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper">.genres-card img {</span>
+<span class="line_wrapper">  width: <span style="color:#008c00; ">100</span>%;</span>
+<span class="line_wrapper">  height: <span style="color:#008c00; ">100</span>%;</span>
+<span class="line_wrapper">  object-fit: cover;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper">.genres-card:hover {</span>
+<span class="line_wrapper">  transform: scale(<span style="color:#008c00; ">1.05</span>);</span>
+<span class="line_wrapper">  box-shadow: <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">15</span>px #<span style="color:#008c00; ">00</span>ff66;</span>
+<span class="line_wrapper">}</span>
+<span class="line_wrapper"></span></pre>
+            </pre>
+        <h2>Зображення</h2>
+        <img src="images_lab8/CAROUSEL.png" alt="сlass_selector" style="width:100%;">
+    </main>
+    <footer></footer>
+</body>
+
+</html>
