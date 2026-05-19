@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>Docker-контейнеризація</h2>
+    </header>
+    <main>
+        <h2>Зображення</h2>
+        <h2>Файл .env з маршрутами та конфеденційними данними</h2>
+        <img src="images_lab12/ENV.png" alt="сlass_selector" style="width:100%;">
+        <h2>Створюємо файл тест навантаження</h2>
+        <img src="images_lab12/Test_file.png" alt="сlass_selector" style="width:100%;">
+        <img src="images_lab12/Artilery.png" alt="сlass_selector" style="width:100%;">
+        <h2>наповнюємо БД, 1000 записів інакше кеш не має сенсу</h2>
+        <img src="images_lab12/Seed_func.png" alt="сlass_selector" style="width:100%;">
+        <img src="images_lab12/Seeding.png" alt="сlass_selector" style="width:100%;">
+        <h2>Без Redis: 50 rps → 50 SQL SELECT * FROM games (1000 rows)
+            З Redis: 50 rps → 1 SQL + 49 Redis
+            Різниця буде в рази.
+        </h2>
+        <h2>У файлі .env спочатку значення USE_CACHE=false без кешу потім USE_CACHE=true і з кешем</h2>
+        <h2>Запуск без кеша:</h2>
+        <h2>npx artillery run artillery-test.yml</h2>
+        <img src="images_lab12/Test_withoutcahe.png" alt="сlass_selector" style="width:100%;">
+        <h2>Запуск з кешем:</h2>
+        <h2>npx artillery run artillery-test.yml</h2>
+        <img src="images_lab12/Test_withcache.png" alt="сlass_selector" style="width:100%;">
+        <h2>Загальна статистика Що показує Artillery</h2>
+        <h2>
+            Було проведено навантажувальне тестування API за допомогою інструмента Artillery. Під час тестування генерувалося 20 запитів на секунду протягом 30 секунд. Загалом було виконано 1800 HTTP-запитів.
+
+Після впровадження Redis-кешування було отримано такі результати:
+
+середній час відповіді — 3.1 ms
+95-й перцентиль — 5 ms
+99-й перцентиль — 7 ms
+помилок виконання не зафіксовано (vusers.failed = 0)
+
+Значна кількість відповідей зі статусом 429 пояснюється роботою механізму обмеження швидкості (Rate Limiter), що підтверджує наявність захисту API від перевантаження.
+
+Порівняно з режимом без кешування, використання Redis дозволило уникнути постійних звернень до бази даних та суттєво зменшити затримку відповіді сервера. Більшість запитів оброблялися безпосередньо з кешу, що забезпечило стабільну роботу системи під навантаженням та покращило масштабованість застосунку.
+        </h2>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
